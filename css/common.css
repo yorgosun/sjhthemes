@@ -1,0 +1,318 @@
+/* 公共样式 */
+
+.songjing {
+    position: relative;
+}
+
+.songjing ul {
+    padding: 0;
+    margin: 0;
+}
+
+.songjing .nav {
+    width: 100%;
+    height: 450px;
+    color: #fff;
+    background-image: url("../img/songjing_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px 450px;
+    margin-bottom: 20px;
+}
+
+
+.ebook .nav {
+    background-image: url("../img/ebook.jpg");
+}
+
+.songjingxinde .nav {
+    background-image: url("../img/songjingxinde.jpg");
+}
+
+.huodongxiangce .nav {
+    background-image: url("../img/huodongxiangce.jpg");
+}
+
+.songjing .nav h1.title {
+    font-size: 36px;
+    margin: 140px auto 45px;
+    text-align: center;
+}
+
+.songjing .nav p.intro {
+    font-size: 14px;
+    line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
+}
+
+
+.songjing ul.tab {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.songjing ul.tab  li {
+    margin: 0;
+    float: left;
+    list-style: none;
+    border-right:1px solid #eee;
+
+}
+.songjing ul.tab  li:last-child {
+    border-right: 0;
+}
+.songjing ul.tab  li a,
+.songjing ul.tab  li a:link {
+    float: left;
+    display: inline-block;
+    width: 224px;
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 30px;
+
+}
+
+
+.songjing ul.tab  li.current a,
+.songjing ul.tab  li a:hover{
+    background-color: #eee;
+}
+
+.songjing ul.tab li span.line {
+    float: left;
+    display: inline-block;
+    border-right:1px solid #eee;
+    width: 29px;
+    height: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.tab-item {
+    margin-bottom: 100px;
+}
+
+.tab-item h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.currentActivity h3 {
+    margin: 65px auto 45px;
+}
+
+ul.activities {
+    width: 1020px;
+    overflow: auto;
+    margin: 0 auto;
+}
+ul.activities li.item {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+
+}
+ul.activities li.item:nth-child(3n+0) {
+    margin-right: 0;
+}
+ul.activities li.item a,
+ul.activities li.item a:link {
+    display: inline-block;
+    width: 320px;
+}
+
+ul.activities li.item a img {
+    width: 100%;
+}
+
+ul.book {
+    width: 1020px;
+    overflow: auto;
+    margin: 0  auto;
+    color: #333;
+}
+
+ul.book li {
+    list-style: none;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+ul.book .cover {
+    width: 140px;
+    float: left;
+}
+ul.book .cover a.downBtn,
+ul.book .cover a:link.downBtn
+{
+    width: 120px;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #666;
+}
+
+ul.book .cover a.downBtn:hover {
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+ul.book .info {
+    width: 700px;
+    float: left;
+    margin-left: 55px;
+}
+ul.book .info h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul.book .info p{
+    line-height: 20px;
+    font-size: 14px;
+}
+
+ul.book .info .title {
+    color: #888;
+}
+
+
+
+.canjia h3 {
+
+}
+.canjia p {
+    text-align: center;
+}
+
+.canjia ul {
+    overflow: auto;
+    width: 920px;
+    margin: 0 auto;
+}
+.canjia ul li {
+    padding: 40px;
+    float: left;
+    list-style: none;
+}
+
+.canjia ul li a.app {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.canjia ul li a.down,
+.canjia ul li a:link.down{
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.canjia ul li a.app-win,
+.canjia ul li a:link.app-win {
+    background-image: url("../img/windows.png");
+
+}
+.canjia ul li a.app-win:hover,
+.canjia ul li a:link.app-win:hover
+{
+    background-image: url("../img/windows_hover.png");
+}
+
+
+
+
+.canjia ul li a.app-mac,
+.canjia ul li a:link.app-mac {
+    background-image: url("../img/mac1.png");
+
+}
+
+.canjia ul li a.app-mac:hover,
+.canjia ul li a:link.app-mac:hover
+{
+    background-image: url("../img/mac1_hover.png");
+}
+
+
+
+.canjia ul li a.app-phone,
+.canjia ul li a:link.app-phone {
+    background-image: url("../img/phone.png");
+
+}
+
+.canjia ul li a.app-phone:hover,
+.canjia ul li a:link.app-phone:hover
+{
+    background-image: url("../img/phone_hover.png");
+}
+
+
+.canjia ul li a.app-hd,
+.canjia ul li a:link.app-hd {
+    background-image: url("../img/HD.png");
+
+}
+
+.canjia ul li a.app-hd:hover,
+.canjia ul li a:link.app-hd:hover
+{
+    background-image: url("../img/HD_hover.png");
+}
+
+.canjia .left{
+    width: 500px;
+    float: left;
+}
+
+.canjia .right {
+    width: 450px;
+    float: left;
+    margin-left: 50px;
+}
+
+.canjia .left p, .canjia .right p{
+    text-align: left;
+}
+
+.yigui .left {
+    width: 400px;
+    float: left;
+}
+
+
+.yigui {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.yigui p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.yigui .right {
+    width: 400px;
+    float: left;
+    margin-left: 50px;
+}
