@@ -7,26 +7,27 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header();?>
 
 <div class="container">
 	<div class="col-md-10 col-md-offset-1">
+<?php
+if (function_exists('cmp_breadcrumbs') && !is_home()) {
+    cmp_breadcrumbs();
+}
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+// Start the loop.
+while (have_posts()): the_post();
 
-			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'single' );
+    // Include the single post content template.
+    get_template_part('template-parts/content', 'single');
 
-			
-
-			// End of the loop.
-		endwhile;
-		?>
+    // End of the loop.
+endwhile;
+?>
 
 	</div>
 </div>
 
 
-<?php get_footer(); ?>
+<?php get_footer();?>

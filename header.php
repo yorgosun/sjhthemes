@@ -10,26 +10,26 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<html <?php language_attributes();?> class="no-js">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset');?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
+	<?php wp_head();?>
 	<?php
-		if (is_home() || is_category()) {
-			wp_enqueue_style( 'indexcss', get_template_directory_uri() . '/css/index.css', array(), '20160809' );
-		}
-		if (is_single()) {
-			wp_enqueue_style( 'detailcss', get_template_directory_uri() . '/css/detail.css', array(), '20160809' );
-		}
-		if (is_category()) {
-			wp_enqueue_style( 'commoncss', get_template_directory_uri() . '/css/common.css', array(), '20160809' );
-		}
-	?>
+if (is_home() || is_category()) {
+    wp_enqueue_style('indexcss', get_template_directory_uri() . '/css/index.css', array(), '20160809');
+}
+if (is_single()) {
+    wp_enqueue_style('detailcss', get_template_directory_uri() . '/css/detail.css', array(), '20160809');
+}
+if (is_category()) {
+    wp_enqueue_style('commoncss', get_template_directory_uri() . '/css/common.css', array(), '20160809');
+}
+?>
 </head>
 	<body>
-		<nav class="navbar navbar-default <?php if (is_home() || is_category()) { ?>navbar-fixed-top<?php } ?> <?php if (is_single()) { ?>nav-gray-bg<?php } ?> ">
+		<nav class="navbar navbar-default <?php if (is_home() || is_category()) {?>navbar-fixed-top<?php }?> <?php if (is_single()) {?>nav-gray-bg<?php }?> ">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -42,12 +42,14 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li <?php if (is_home()) {?> class="active"<?php } ?>><a href="/">首页</a></li>
-						<li><a href="/?cat=54">诵经活动</a></li>
-						<li><a href="/?cat=53">电子经文</a></li>
-						<li <?php if (is_single()) {?> class="active"<?php } ?>><a href="/?cat=50">诵经心得</a></li>
-						<li><a href="#">活动相册</a></li>
+						<li <?php if (is_home()) {?> class="active"<?php }?>><a href="/">首页</a></li>
+						<li class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/category/default/songjinghuodong">诵经活动</a></li>
+						<li class="<?php echo is_category('dianzijingwen') ? 'active' : ''; ?>"><a href="/category/default/dianzijingwen/">电子经文</a></li>
+						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/category/default/songjingxinde/">诵经心得</a></li>
+						<li class="<?php echo is_category('xxxx') ? 'active' : ''; ?>"><a href="#">活动相册</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+
+

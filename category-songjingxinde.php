@@ -7,7 +7,7 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header();?>
 
 <div class="songjing songjingxinde">
     <div class="nav">
@@ -27,36 +27,37 @@ get_header(); ?>
                     <ul class="activities" style="margin-top: 20px;">
 
 <?php
-			wp_reset_postdata();
-                        $postargs = array(
-                                'posts_per_page' => 10,
-                                'category_name' => 'songjingxinde',
-                                'meta_query' => array(array('key' => '_thumbnail_id')),
-                                'orderby' => 'date',
- 				'paged' => get_query_var('paged'),
-                                'order' => 'DESC'
-                        );
-                        $query = new WP_Query( $postargs );
-                        $n = 0;
-                        while ( $query->have_posts() ) : $query->the_post();
+wp_reset_postdata();
+$postargs = array(
+    'posts_per_page' => 9,
+    'category_name' => 'songjingxinde',
+    'meta_query' => array(array('key' => '_thumbnail_id')),
+    'orderby' => 'date',
+    'paged' => get_query_var('paged'),
+    'order' => 'DESC',
+);
+$query = new WP_Query($postargs);
+$n = 0;
+while ($query->have_posts()): $query->the_post();
 
-?>
-			<li class="item">
-                            <a href="<?php echo get_the_permalink(); ?>">
-                                <img src="<?php echo get_the_post_thumbnail_url(null, array(300,183)) ?>">
-                            <h5><?php echo get_the_title(); ?></h5></a>
-                            <p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d') ?></p>
-                        </li>
+    ?>
+			    <li class="item">
+			        <a href="<?php echo get_the_permalink(); ?>">
+			        <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183));
+    echo 'http://127.0.0.1/wp-content/themes/twentysixteen/img/activity1.jpg' ?>">
+			        <h5><?php echo get_the_title(); ?></h5></a>
+			        <p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
+			    </li>
 
-<?php
-                        endwhile;
-                        wp_reset_postdata();
+				<?php
+endwhile;
+wp_reset_postdata();
 ?>
 
                     </ul>
                 </div>
-<?php 
-wp_pagenavi(); 
+<?php
+wp_pagenavi();
 ?>
 
             </div>
@@ -69,4 +70,4 @@ wp_pagenavi();
     </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>
