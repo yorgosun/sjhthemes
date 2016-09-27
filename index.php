@@ -28,12 +28,12 @@ $query1 = new WP_Query($postargs);
 $n = 0;
 while ($query1->have_posts()): $query1->the_post();
     ?>
-										<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
-										<?php if ($n == 0) {
+											<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
+											<?php if ($n == 0) {
         echo " class=\"active\"";
     }
     ?>>
-									<?php
+										<?php
     $n++;
 endwhile;
 wp_reset_postdata();
@@ -47,18 +47,18 @@ $n = 0;
 
 while ($query1->have_posts()): $query1->the_post();
     ?>
-								<div class="<?php if ($n == 0) {
+									<div class="<?php if ($n == 0) {
         echo "active ";
     }
     ?>item" data-slide-number="<?php echo $n ?>">
-							<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
-							<div class="carousel-caption">
-							<h1><?php echo get_the_title() ?></h1>
-							<hr>
-							<p><?php echo get_the_excerpt() ?></p>
-							</div>
-							</div>
-							<?php
+								<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
+								<div class="carousel-caption">
+								<h1><?php echo get_the_title() ?></h1>
+								<hr>
+								<p><?php echo get_the_excerpt() ?></p>
+								</div>
+								</div>
+								<?php
     $n++;
 endwhile;
 wp_reset_postdata();
@@ -77,15 +77,15 @@ $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
 
-							<a href="<?php echo get_the_permalink(); ?>">
-								<div class="col-md-3">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu1.jpg" class="img-responsive">
-									<p class="text-center peitu-title">- <?php echo get_the_title() ?> -</p>
-									<p class="peitu-desc"><?php echo get_the_excerpt() ?></p>
-								</div>
-							</a>
+								<a href="<?php echo get_the_permalink(); ?>">
+									<div class="col-md-3">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu1.jpg" class="img-responsive">
+										<p class="text-center peitu-title">- <?php echo get_the_title() ?> -</p>
+										<p class="peitu-desc"><?php echo get_the_excerpt() ?></p>
+									</div>
+								</a>
 
-					<?php
+						<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -160,19 +160,19 @@ $postargs = array(
     'category_name' => 'songjingxinde',
     'meta_query' => array(array('key' => '_thumbnail_id')),
     'orderby' => 'date',
-    'order' => 'DESC',
+    'order' => 'asc',
 );
 $query2 = new WP_Query($postargs);
 $n = 0;
 while ($query2->have_posts()): $query2->the_post();
 
     ?>
-																										<div class="col-md-6">
-																											<a href="<?php echo get_the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>" width="300" height="183"></a>
-																											<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-																											<p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
-																										</div>
-																						<?php
+																											<div class="col-md-6">
+																												<a href="<?php echo get_the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>" width="300" height="183"></a>
+																												<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+																												<p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
+																											</div>
+																							<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -202,10 +202,10 @@ while ($query3->have_posts()): $query3->the_post();
 
     ?>
 
-																					    <a href="<?php echo get_the_permalink(); ?>">
-																					    	<div class="booktitle"><?php echo get_the_title(); ?></div>
-																					    <img src="/wp-content/themes/twentysixteen/img/book.jpg"></a>
-																						<?php
+																						    <a href="<?php echo get_the_permalink(); ?>">
+																						    	<div class="booktitle"><?php echo get_the_title(); ?></div>
+																						    <img src="/wp-content/themes/twentysixteen/img/book.jpg"></a>
+																							<?php
 endwhile;
 wp_reset_postdata();
 ?>
