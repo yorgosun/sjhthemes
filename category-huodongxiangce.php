@@ -24,7 +24,7 @@ get_header();?>
         <div class="container">
            <?php
 if (function_exists('nggSlideshowWidget')) {
-    nggSlideshowWidget($galleryID, $Width, $Height);
+    nggSlideshowWidget(1, 320, 200);
 }
 ?>
 
