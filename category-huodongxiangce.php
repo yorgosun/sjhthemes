@@ -8,5 +8,23 @@
  */
 
 get_header();?>
-相册
+
+<div class="songjing ebook">
+    <div class="nav">
+        <div class="container">
+            <h1 class="title">
+                诵经所需的电子书
+            </h1>
+            <p class="intro" style="text-align: center;">
+                "周日诵经会项目"在2015年初开始做的时候,是作为信息中心的内部学修
+            </p>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+           相册
+        </div>
+    </section>
+</div>
+
 <?php get_footer();?>
