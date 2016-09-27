@@ -71,7 +71,7 @@ $postargs = array(
     'posts_per_page' => 4,
     'category_name' => '缘理服展',
     'orderby' => 'date',
-    'order' => 'DESC',
+    'order' => 'asc',
 );
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
