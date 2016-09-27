@@ -59,26 +59,30 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="container content-block">
+<a href="/?p=2151">
 			<div class="col-md-3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu1.jpg" class="img-responsive">
 				<p class="text-center peitu-title">- 缘启 -</p>
-				<p class="peitu-desc">描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字</p>
-			</div>
+				<p class="peitu-desc">诵经会网站起源于“周日诵经会”项目，该项目在2015年初开始做的时候，是作为龙泉寺信息中心的内部学修</p>
+			</div></a>
+<a href="/?p=2154">
 			<div class="col-md-3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu2.jpg" class="img-responsive">
 				<p class="text-center peitu-title">- 理念 -</p>
-				<p class="peitu-desc">描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字</p>
-			</div>
+				<p class="peitu-desc">龙泉寺一直有诵经的传统，师父起初建寺的时候就提倡大家“读诵大乘经典”，法会的时候经常诵经，也是龙泉寺的一个特色</p>
+			</div></a>
+<a href="/?p=2156">
 			<div class="col-md-3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu3.jpg" class="img-responsive">
 				<p class="text-center peitu-title">- 服务 -</p>
-				<p class="peitu-desc">描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字</p>
-			</div>
+				<p class="peitu-desc">诵经会网站提供经文中的疑难字、词，电子版经文供大家预习，并提供完整的诵经仪轨、高品质诵经音视频</p>
+			</div></a>
+<a href="/?p=2160">
 			<div class="col-md-3">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/index_peitu4.jpg" class="img-responsive">
 				<p class="text-center peitu-title">- 展望 -</p>
-				<p class="peitu-desc">描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字</p>
-			</div>
+				<p class="peitu-desc">2016年我们发愿共同转读《大佛顶首楞严经》，回向一切有情众生，皆有因缘听经闻法</p>
+			</div></a>
 		</div>
 		<div class="container-fluid content-block content-gray">
 		<div class="container">

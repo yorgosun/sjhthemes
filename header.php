@@ -26,7 +26,9 @@
 		if (is_category()) {
 			wp_enqueue_style( 'commoncss', get_template_directory_uri() . '/css/common.css', array(), '20160809' );
 		}
+
 	?>
+
 </head>
 	<body>
 		<nav class="navbar navbar-default <?php if (is_home() || is_category()) { ?>navbar-fixed-top<?php } ?> <?php if (is_single()) { ?>nav-gray-bg<?php } ?> ">
@@ -43,9 +45,9 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li <?php if (is_home()) {?> class="active"<?php } ?>><a href="/">首页</a></li>
-						<li><a href="/?cat=54">诵经活动</a></li>
-						<li><a href="/?cat=53">电子经文</a></li>
-						<li <?php if (is_single()) {?> class="active"<?php } ?>><a href="/?cat=50">诵经心得</a></li>
+						<li class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/?cat=54">诵经活动</a></li>
+						<li class="<?php echo is_category('dianzijingwen') ? 'active' : ''; ?>"><a href="/?cat=53">电子经文</a></li>
+						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/?cat=50">诵经心得</a></li>
 						<li><a href="#">活动相册</a></li>
 					</ul>
 				</div>
