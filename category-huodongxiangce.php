@@ -9,7 +9,7 @@
 
 get_header();?>
 
-<div class="songjing">
+<div class="songjing huodongxiangce">
     <div class="nav">
         <div class="container">
             <h1 class="title">
