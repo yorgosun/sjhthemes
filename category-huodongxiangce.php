@@ -22,7 +22,7 @@ get_header();?>
     </div>
     <section>
         <div class="container">
-<?php if (function_exists(’nggSlideshowWidget’)) {nggSlideshowWidget(1, 320, 200);}?>
+<?php if (function_exists('nggSlideshowWidget')) {nggSlideshowWidget(1, 320, 200);}?>
         </div>
     </section>
 </div>
