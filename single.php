@@ -13,7 +13,7 @@ get_header();?>
 	<div class="col-md-10 col-md-offset-1">
 <?php
 if (function_exists('cmp_breadcrumbs') && !is_home()) {
-    cmp_breadcrumbs();
+    //cmp_breadcrumbs();
 }
 
 // Start the loop.
