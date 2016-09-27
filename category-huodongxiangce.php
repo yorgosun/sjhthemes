@@ -23,7 +23,8 @@ get_header();?>
     <section>
         <div class="container">
 <?php
-if (function_exists('nggSlideshowWidget')) {nggSlideshowWidget();}
+$article_id = 1947; //页面的ID
+echo get_post($article_id)->post_content;
 ?>
 
         </div>
