@@ -7,7 +7,7 @@
  * @since Twenty Sixteen 1.0
  */
 
-get_header(); ?>
+get_header();?>
 
 <div class="songjing songjingxinde">
     <div class="nav">
@@ -49,15 +49,15 @@ get_header(); ?>
                             <p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d') ?></p>
                         </li>
 
-<?php
-                        endwhile;
-                        wp_reset_postdata();
+				<?php
+endwhile;
+wp_reset_postdata();
 ?>
 
                     </ul>
                 </div>
-<?php 
-wp_pagenavi(); 
+<?php
+wp_pagenavi();
 ?>
 
             </div>
@@ -70,4 +70,4 @@ wp_pagenavi();
     </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

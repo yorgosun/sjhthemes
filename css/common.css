@@ -1,5 +1,8 @@
 /* 公共样式 */
-
+a
+{
+    color:#000;
+}
 .songjing {
     position: relative;
 }

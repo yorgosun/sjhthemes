@@ -1,141 +1,158 @@
 /* header css */
 
 .navbar {
-	/*background-color: #333;*/
-	background-color:transparent;
-	border-color:transparent;
-	min-height: 80px;
+    /*background-color: #333;*/
+    background-color: transparent;
+    border-color: transparent;
+    min-height: 80px;
 }
 
 .nav-gray-bg {
-	background-color: #333;
+    background-color: #333;
 }
 
 .navbar-brand {
-	height: 100px;
+    height: 100px;
 }
 
 .navbar-brand img {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .navbar-nav {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .navbar-default .navbar-nav>li>a {
-	color:#fff;
+    color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
-	color:#777;
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #777;
 }
+
 
 /* header css end */
 
 .carousel-caption {
-	top: 200px;
+    top: 200px;
 }
 
 .carousel-caption p {
-	text-align: left;
-	font-size: 18px;
-	line-height: 30px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .carousel-indicators img {
-	border: 2px solid #8e8e8e;
-	width: 160px;
-	height: 100px;
+    border: 2px solid #8e8e8e;
+    width: 160px;
+    height: 100px;
 }
 
 .carousel-indicators .active {
-	width: 160px;
-	height: 100px;
-	border: 2px solid #fff;
+    width: 160px;
+    height: 100px;
+    border: 2px solid #fff;
 }
 
 .peitu-title {
-	color: #fff;
-	font-size: 16px;
-	margin-top: -80px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: -80px;
 }
 
 .peitu-desc {
-	margin-top: 80px;
+    margin-top: 80px;
 }
 
 .content-block {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: #333;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #333;
 }
 
 .content-block a {
-	color: #333;
+    color: #333;
 }
 
 .content-block h2 {
-	font-size: 24px;
-	margin: 20px 0;
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 .content-block h3 {
-	font-size:16px;
+    font-size: 16px;
 }
 
 .content-block .desctext {
-	line-height: 30px;
-	font-size: 16px;
-	margin-top: 10px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .content-block .button {
-	border: 1px solid #333;
-	display: block;
-	width: 120px;
-	margin: 50px auto 0 auto;
-	padding: 8px 10px;
-	color: #333;
-	font-size: 16px;
+    border: 1px solid #333;
+    display: block;
+    width: 120px;
+    margin: 50px auto 0 auto;
+    padding: 8px 10px;
+    color: #333;
+    font-size: 16px;
 }
+
 .content-block hr {
-	margin: 50px 0;
+    margin: 50px 0;
 }
 
 .content-gray {
-	background-color: #eee;
+    background-color: #eee;
 }
 
 .content-gray .button {
-	color: #fff;
-	background-color: #666;
+    color: #fff;
+    background-color: #666;
 }
 
 .content-darkgray {
-	color: #cbcbcb;
-	background-color: #666;
-	padding: 50px 0 10px 0;
+    color: #cbcbcb;
+    background-color: #666;
+    padding: 50px 0 10px 0;
 }
 
-.booklist img {
-	margin: 10px 0 10px 15px;
-}
+.booklist img {}
 
 .footer p {
-	font-size: 16px;
-	padding-bottom: 10px;
+    font-size: 16px;
+    padding-bottom: 10px;
 }
 
 .footer li {
-	list-style-type: none;
-	margin: 10px 0;
+    list-style-type: none;
+    margin: 10px 0;
 }
 
 .footer a {
-	color: #cbcbcb;
+    color: #cbcbcb;
 }
 
 .copyright {
-	text-align: center;
+    text-align: center;
+}
+
+.booklist a {
+    display: -webkit-inline-box;
+    margin: 7px;
+    position: relative;
+}
+
+.booktitle {
+     position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 5px;
 }
