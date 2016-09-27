@@ -22,12 +22,13 @@ get_header();?>
     </div>
     <section>
         <div class="container">
-            相册
+           <?php
+if (function_exists('nggSlideshowWidget')) {
+    nggSlideshowWidget($galleryID, $Width, $Height);
+}
+?>
 
         </div>
-
-
-
     </section>
 </div>
 
