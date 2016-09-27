@@ -47,7 +47,7 @@ if (is_category()) {
 						<li <?php if (is_home()) {?> class="active"<?php }?>><a href="/">首页</a></li>
 						<li class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/?cat=54">诵经活动</a></li>
 						<li class="<?php echo is_category('dianzijingwen') ? 'active' : ''; ?>"><a href="/?cat=53">电子经文</a></li>
-						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/?cat=28">诵经心得</a></li>
+						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/?cat=50">诵经心得</a></li>
 						<li class="<?php echo is_category('huodongxiangce') ? 'active' : ''; ?>"><a href="/?cat=69">活动相册</a></li>
 					</ul>
 				</div>
