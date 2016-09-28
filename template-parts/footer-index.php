@@ -22,7 +22,7 @@
 </div>
 <div class="col-md-4">
 	<p>公众平台</p>
-	<img src="/wp-content/themes/twentysixteen/img/qrcode.jpg">
+	<img src="<?php echo get_template_directory_uri(); ?>/img/qrcode.jpg">
 </div>
 <div class="col-md-12">
 	<hr>

@@ -21,8 +21,8 @@
 				</div>
 			</div>
 		</div>
-		<script src="/wp-content/themes/twentysixteen/js/jquery.min.js"></script>
-		<script src="/wp-content/themes/twentysixteen/js/bootstrap.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		<?php if (is_home() || is_category()): ?>
 		<script type="text/javascript">
 			$('#myCarousel').carousel({

@@ -13,10 +13,12 @@
 
 .navbar-brand {
     height: 100px;
+    padding: 0 15px;
 }
 
 .navbar-brand img {
     margin-top: 10px;
+    width: 180px;
 }
 
 .navbar-nav {
