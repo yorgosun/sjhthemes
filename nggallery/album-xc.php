@@ -1,5 +1,4 @@
 <?php $this->start_element('nextgen_gallery.gallery_container', 'container', $displayed_gallery);?>
-这是相册模版
 <div class="ngg-albumoverview">
     <?php foreach ($galleries as $gallery) {
     ?>
@@ -18,7 +17,7 @@
                             data-description="<?php echo esc_attr(stripslashes($gallery->previewpic_image->description)) ?>"
                             data-image-id="<?php echo esc_attr($gallery->previewpic) ?>"
                         >
-                            <img class="Thumb"
+                            <img class="Thumb" style="width:320px;height:200px"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
@@ -45,13 +44,7 @@
                     <?php echo_safe_html($gallery->title);?>
                 </a>
             </h4>
-            <p class="ngg-album-gallery-image-counter">
-                <?php if (isset($gallery->counter) && $gallery->counter > 0) {?>
-                    <strong><?php echo $gallery->counter; ?></strong>&nbsp;<?php _e('Photos', 'nggallery');?>
-                <?php } else {?>
-                    &nbsp;
-                <?php }?>
-            </p>
+
         </div>
     <?php }?>
     <br class="ngg-clear"/>
