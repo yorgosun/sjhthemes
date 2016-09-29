@@ -21,7 +21,7 @@ get_header();?>
     </div>
     <section>
         <div class="container">
-        <?php echo do_shortcode('[album id=1 template=compact]'); ?>
+        <?php echo do_shortcode('[album id=1]'); ?>
         </div>
     </section>
 </div>
