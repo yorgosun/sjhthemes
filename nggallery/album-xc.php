@@ -23,7 +23,7 @@
                         </a>
                     <?php else: ?>
                         <a class="Link gallery_link" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
-                            <img class="Thumb"
+                            <img class="Thumb" style="width:320px;height:200px"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
