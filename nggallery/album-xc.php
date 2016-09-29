@@ -6,7 +6,7 @@
             <div class="ngg-album-compactbox">
                 <div class="ngg-album-link">
                     <?php $this->start_element('nextgen_gallery.album_gallery', 'item', $gallery);?>
-                    <?php if ($open_gallery_in_lightbox and $gallery->entity_type == 'gallery'): ?>
+
                         <a
                             <?php echo $gallery->displayed_gallery->effect_code ?>
                             href="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
@@ -17,17 +17,11 @@
                             data-description="<?php echo esc_attr(stripslashes($gallery->previewpic_image->description)) ?>"
                             data-image-id="<?php echo esc_attr($gallery->previewpic) ?>"
                         >
-                            <img class="Thumb" style="width:320px;height:200px"
+                            <img class="Thumb" style="width:310px;height:200px"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
-                    <?php else: ?>
-                        <a class="Link gallery_link" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
-                            <img class="Thumb" style="width:320px;height:200px"
-                                 alt="<?php echo esc_attr($gallery->title); ?>"
-                                 src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
-                        </a>
-                    <?php endif?>
+
                     <?php $this->end_element();?>
                 </div>
             </div>
