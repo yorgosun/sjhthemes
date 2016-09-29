@@ -4,7 +4,7 @@
 	/*background-color: #333;*/
 	background-color:transparent;
 	border-color:transparent;
-	min-height: 80px;
+	min-height: 50px;
 }
 
 .nav-gray-bg {
@@ -12,15 +12,17 @@
 }
 
 .navbar-brand {
-	height: 100px;
+	padding: 0;
+	padding-top:5px;
 }
 
 .navbar-brand img {
-	margin-top: 10px;
+	
+	width: 100px;
 }
 
 .navbar-nav {
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
