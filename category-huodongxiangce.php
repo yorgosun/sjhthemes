@@ -8,7 +8,6 @@
  */
 
 get_header();?>
-
 <div class="songjing huodongxiangce">
     <div class="nav">
         <div class="container">
@@ -26,5 +25,4 @@ get_header();?>
         </div>
     </section>
 </div>
-
 <?php get_footer();?>
