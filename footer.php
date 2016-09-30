@@ -22,7 +22,7 @@ if (is_home()) {
 			</div>
 		</div>
 
-		<?php if (is_home() || is_category()): ?>
+		<?php if (is_home() || is_category() || is_page()): ?>
 		<script type="text/javascript">
 			$('#myCarousel').carousel({
 				interval: 5000
