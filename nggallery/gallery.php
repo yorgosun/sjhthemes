@@ -12,6 +12,8 @@ You can check the content when you insert the tag <?php var_dump($variable) ?>
 If you would like to show the timestamp of the image ,you can use <?php echo $exif['created_timestamp'] ?>
  **/
 ?>
+<link type="application/rss+xml" href="/wp-content/themes/twentysixteen/css/jquery-foxibox-0.2.css">
+<script type="text/javascript" src="/wp-content/themes/twentysixteen/js/jquery-foxibox-0.2.min.js"></script>
 <?php if (!defined('ABSPATH')) {
     die('No direct access allowed');
 }
@@ -34,7 +36,7 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
 
 	<div id="ngg-image-<?php echo $image->pid ?>" class="ngg-gallery-thumbnail-box" <?php echo $image->style ?> >
 		<div class="ngg-gallery-thumbnail" >
-			<a href="<?php echo nextgen_esc_url($image->imageURL) ?>"
+			<a rel="[gall1]" href="<?php echo nextgen_esc_url($image->imageURL) ?>"
                title="<?php echo esc_attr($image->description) ?>"
                <?php echo $image->thumbcode ?> >
 				<?php if (!$image->hidden) {?>
@@ -61,5 +63,9 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
  	<?php echo $pagination ?>
 
 </div>
-
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a[rel]').foxibox();
+});
+</script>
 <?php endif;?>
