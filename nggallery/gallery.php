@@ -12,8 +12,8 @@ You can check the content when you insert the tag <?php var_dump($variable) ?>
 If you would like to show the timestamp of the image ,you can use <?php echo $exif['created_timestamp'] ?>
  **/
 ?>
-<link type="application/rss+xml" href="/wp-content/themes/twentysixteen/css/jquery-foxibox-0.2.css">
-<script type="text/javascript" src="/wp-content/themes/twentysixteen/js/jquery-foxibox-0.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery-foxibox-0.2.css">
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-foxibox-0.2.min.js"></script>
 <?php if (!defined('ABSPATH')) {
     die('No direct access allowed');
 }
