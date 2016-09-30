@@ -41,7 +41,7 @@
   z-index: 102;
   width: 32px;
   height: 32px;
-  background: url(../images/foxibox-loading.gif) no-repeat;
+  background: url(../img/foxibox-loading.gif) no-repeat;
 }
 #foxibox_container {
 /* top, left, width, height and padding are set in he script */
@@ -83,28 +83,28 @@
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) 0px 0px no-repeat;
+  background: url(../img/foxibox-arrows.gif) 0px 0px no-repeat;
 }
 #foxibox_nav #next {
   display: block;
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -20px 0px no-repeat;
+  background: url(../img/foxibox-arrows.gif) -20px 0px no-repeat;
 }
 #foxibox_details #scale {
   display: block;
   width: 20px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -60px 0px no-repeat;
+  background: url(../img/foxibox-arrows.gif) -60px 0px no-repeat;
 }
 #foxibox_details #close {
   display: block;
   width: 16px;
   height: 16px;
   float: right;
-  background: url(../images/foxibox-arrows.gif) -40px 0px no-repeat;
+  background: url(../img/foxibox-arrows.gif) -40px 0px no-repeat;
 }
 #foxibox_nav #prev:hover {
   background-position: 0px -20px;
