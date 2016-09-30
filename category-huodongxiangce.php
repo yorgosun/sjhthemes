@@ -1,12 +1,7 @@
 <?php
-/**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
+/*
+Template Name: 活动相册模版
  */
-
 get_header();?>
 <div class="songjing huodongxiangce">
     <div class="nav">
