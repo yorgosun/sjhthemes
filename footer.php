@@ -12,32 +12,31 @@
 		<div class="container-fluid content-block content-darkgray footer">
 			<div class="container">
 				<?php
-					if (is_home()) {
-						get_template_part('template-parts/footer','index');
-					}
-				?>
+if (is_home()) {
+    get_template_part('template-parts/footer', 'index');
+}
+?>
 				<div class="col-md-12">
 					<p class="copyright">Copyright 2016 @龙泉寺信息中心</p>
 				</div>
 			</div>
 		</div>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+
 		<?php if (is_home() || is_category()): ?>
 		<script type="text/javascript">
 			$('#myCarousel').carousel({
 				interval: 5000
 			});
-			
+
 			$(function() {
 				var win = $(window);
 				win.on("scroll", function() {
 					$(document).scrollTop() > 0 ? $("nav").addClass("nav-gray-bg") : $("nav").removeClass("nav-gray-bg")
 				});
 			});
-			
+
 		</script>
-		<?php endif; ?>
+		<?php endif;?>
 
 <?php if (is_category("songjinghuodong")): ?>
 <script>
@@ -73,7 +72,7 @@ $(document).ready(function(){
 });
 
 </script>
-<?php endif; ?>
-<?php wp_footer(); ?>
+<?php endif;?>
+<?php wp_footer();?>
 </body>
 </html>

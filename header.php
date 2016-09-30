@@ -28,7 +28,8 @@ if (is_category()) {
 }
 
 ?>
-
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 </head>
 	<body>
 		<nav class="navbar navbar-default <?php if (is_home() || is_category()) {?>navbar-fixed-top<?php }?> <?php if (is_single()) {?>nav-gray-bg<?php }?> ">

@@ -64,8 +64,8 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
 
 </div>
 <script type="text/javascript">
-window.onload=function(){
+$(document).ready(function(){
   $('a[rel]').foxibox();
-}
+});
 </script>
 <?php endif;?>
