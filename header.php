@@ -32,7 +32,7 @@ if (is_category() || is_page()) {
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 </head>
 	<body>
-		<nav class="navbar navbar-default <?php if (is_home() || is_category() || is_page()) {?>navbar-fixed-top<?php }?> <?php if (is_single() || is_page()) {?>nav-gray-bg<?php }?> ">
+		<nav class="navbar navbar-default <?php if (is_home() || is_category() || is_page()) {?>navbar-fixed-top<?php }?> <?php if (is_single()) {?>nav-gray-bg<?php }?> ">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
