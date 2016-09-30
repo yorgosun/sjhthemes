@@ -17,13 +17,13 @@
                             data-description="<?php echo esc_attr(stripslashes($gallery->previewpic_image->description)) ?>"
                             data-image-id="<?php echo esc_attr($gallery->previewpic) ?>"
                         >
-                            <img class="Thumb" style="width:270px;height:210px"
+                            <img class="Thumb"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
                     <?php else: ?>
                         <a class="Link gallery_link" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
-                            <img class="Thumb" style="width:270px;height:210px"
+                            <img class="Thumb"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
