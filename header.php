@@ -17,13 +17,13 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head();?>
 	<?php
-if (is_home() || is_category()) {
+if (is_home() || is_category() || is_page()) {
     wp_enqueue_style('indexcss', get_template_directory_uri() . '/css/index.css', array(), '20160809');
 }
 if (is_single()) {
     wp_enqueue_style('detailcss', get_template_directory_uri() . '/css/detail.css', array(), '20160809');
 }
-if (is_category()) {
+if (is_category() || is_page()) {
     wp_enqueue_style('commoncss', get_template_directory_uri() . '/css/common.css', array(), '20160809');
 }
 
@@ -32,7 +32,7 @@ if (is_category()) {
 		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 </head>
 	<body>
-		<nav class="navbar navbar-default <?php if (is_home() || is_category()) {?>navbar-fixed-top<?php }?> <?php if (is_single()) {?>nav-gray-bg<?php }?> ">
+		<nav class="navbar navbar-default <?php if (is_home() || is_category() || is_page()) {?>navbar-fixed-top<?php }?> <?php if (is_single() || is_page()) {?>nav-gray-bg<?php }?> ">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
