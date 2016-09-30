@@ -17,7 +17,7 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
 }
 ?><?php if (!empty($gallery)): ?>
 
-<div  class="ngg-galleryoverview photoyjy" id="<?php echo $gallery->anchor ?>">
+<div class="ngg-galleryoverview" id="<?php echo $gallery->anchor ?>">
 
 <?php if ($gallery->show_slideshow) {?>
 	<!-- Slideshow link -->
