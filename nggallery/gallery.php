@@ -37,7 +37,7 @@ If you would like to show the timestamp of the image ,you can use <?php echo $ex
 	<div id="ngg-image-<?php echo $image->pid ?>" class="ngg-gallery-thumbnail-box" <?php echo $image->style ?> >
 		<div class="ngg-gallery-thumbnail" >
 			<a rel="[gall1]" href="<?php echo nextgen_esc_url($image->imageURL) ?>"
-               title="<?php echo esc_attr($image->description) ?>"
+               titlelqs="<?php echo esc_attr($image->description) ?>"
                <?php echo $image->thumbcode ?> >
 				<?php if (!$image->hidden) {?>
 				<img title="<?php echo esc_attr($image->alttext) ?>" alt="<?php echo esc_attr($image->alttext) ?>" src="<?php echo nextgen_esc_url($image->thumbnailURL) ?>" <?php echo $image->size ?> />
