@@ -15,5 +15,4 @@ get_header();?>
 
 标签分类
 
-<?php get_sidebar();?>
 <?php get_footer();?>
