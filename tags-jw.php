@@ -4,7 +4,6 @@ Template Name: Jw
  */
 ?>
 <?php get_header();?>
-<?php get_sidebar();?>
 <div class="narrowcolumn">
 <div class="post" id="post-<?php the_ID();?>">
 <h2>Tags</h2>
