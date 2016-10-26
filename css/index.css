@@ -124,7 +124,8 @@ body
 
 .content-gray .button {
     color: #fff;
-    background-color: #666;
+    background-color: #dda57c;
+    border: 1px solid #9d583f;
 }
 
 .content-darkgray {
