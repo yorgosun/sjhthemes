@@ -39,7 +39,7 @@
             <h4>
                 <a class="ngg-album-desc"
                    title="<?php echo esc_attr($gallery->title); ?>"
-                   href="<?php echo nextgen_esc_url($gallery->pagelink); ?>"
+                   href="<?php echo nextgen_esc_url($gallery->pagelink); ?>&page_id=2473"
                     <?php echo $max_width; ?>>
                     <?php echo_safe_html($gallery->title);?>
                 </a>
