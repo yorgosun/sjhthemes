@@ -1,6 +1,6 @@
 <?php
 
-get_header(); ?>
+get_header();?>
 
 <div class="songjing">
     <div class="nav">
@@ -37,110 +37,36 @@ get_header(); ?>
             </ul>
             <div class="tab1 tab-item">
                 <div class="currentActivity">
-                    <h3>本周活动</h3>
                     <ul class="activities">
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-                        </li>
+            <?php
+$postargs = array(
+    'posts_per_page' => 2,
+    'category_name' => 'songjinghuodong',
+    'orderby' => 'date',
+    'order' => 'desc',
+);
+$query1 = new WP_Query($postargs);
+while ($query1->have_posts()): $query1->the_post();
+    ?>
+	  <li class="item">
+	         <a href="<?php echo get_the_permalink(); ?>">
+	            <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+	          </a>
+	            <h4><?php echo get_the_title() ?></h4>
+	            <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
+	            <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
+	            <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
+
+
+	   </li>
+	  <?php
+endwhile;
+wp_reset_postdata();
+?>
+
                     </ul>
                 </div>
-                <div class="currentActivity">
-                    <h3>近期活动</h3>
-                    <ul class="activities">
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
 
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-
-                        </li>
-
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-
-                        </li>
-
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-
-                        </li>
-
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-
-                        </li>
-
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-
-                        </li>
-                        <li class="item">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/songjing.jpg" alt="周日诵经会《楞严经》第二卷">
-                            </a>
-                            <h4>周日诵经会《楞严经》第二卷</h4>
-                            <p>时间:2016年7月24日 周日9:40-10:40</p>
-                            <p>地点:见行堂</p>
-                            <p>YY直播:123456</p>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div style="display: none;" class="tab2 tab-item">
                 <div class="canjia">
@@ -392,5 +318,5 @@ get_header(); ?>
     </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>
 
