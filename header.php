@@ -49,7 +49,7 @@ if (is_category() || is_page()) {
 						<li class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/?cat=54">诵经活动</a></li>
 						<li class="<?php echo is_category('dianzijingwen') ? 'active' : ''; ?>"><a href="/?cat=53">电子经文</a></li>
 						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/?cat=50">诵经心得</a></li>
-						<li class="<?php echo is_category('huodongxiangce') ? 'active' : ''; ?>"><a href="/?page_id=2473">活动相册</a></li>
+						<li class="<?php echo is_page('2473') ? 'active' : ''; ?>"><a href="/?page_id=2473">活动相册</a></li>
 					</ul>
 				</div>
 			</div>
