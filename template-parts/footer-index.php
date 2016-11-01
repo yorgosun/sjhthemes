@@ -8,17 +8,13 @@
 	<li><a href="http://www.longquanzs.org/">龙泉之声</a></li>
 	<li><a href="/wp-admin/">后台维护</a></li>
 </div>
-<div class="col-md-2">
-	<p>诵经活动</p>
-</div>
+
 <div class="col-md-2">
 	<p>电子经文</p>
-	<li><a href="#">《金刚经》</a></li>
-	<li><a href="#">《楞严经》</a></li>
-	<li><a href="#">《观世音普门品》</a></li>
-</div>
-<div class="col-md-2">
-	<p>社交</p>
+	<li><a href="/?cat=80">《法华经》</a></li>
+	<li><a href="/?cat=83">《金刚经》</a></li>
+	<li><a href="/?cat=81">《楞严经》</a></li>
+	<li><a href="/?cat=82">《观世音普门品》</a></li>
 </div>
 <div class="col-md-4">
 	<p>公众平台</p>
