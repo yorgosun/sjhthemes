@@ -2,8 +2,8 @@
 <div class="ngg-albumoverview">
     <?php foreach ($galleries as $gallery) {
     ?>
-        <div class="ngg-album-compact">
-            <div class="ngg-album-compactbox">
+        <div class="ngg-album-compact col-md-6">
+            <div class="">
                 <div class="ngg-album-link">
                     <?php $this->start_element('nextgen_gallery.album_gallery', 'item', $gallery);?>
                     <?php if ($open_gallery_in_lightbox and $gallery->entity_type == 'gallery'): ?>
