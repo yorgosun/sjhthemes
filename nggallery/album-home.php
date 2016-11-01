@@ -9,7 +9,7 @@
                     <?php if ($open_gallery_in_lightbox and $gallery->entity_type == 'gallery'): ?>
                         <a
                             <?php echo $gallery->displayed_gallery->effect_code ?>
-                            href="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>&page_id=2473"
+                            href="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
                             data-fullsize="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
                             data-src="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
                             data-thumbnail="<?php echo esc_attr($gallery->previewurl) ?>"
@@ -22,7 +22,7 @@
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
                         </a>
                     <?php else: ?>
-                        <a class="Link gallery_link" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
+                        <a class="Link gallery_link" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>&page_id=2473">
                             <img class="Thumb"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
