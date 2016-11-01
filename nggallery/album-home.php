@@ -9,7 +9,7 @@
                     <?php if ($open_gallery_in_lightbox and $gallery->entity_type == 'gallery'): ?>
                         <a
                             <?php echo $gallery->displayed_gallery->effect_code ?>
-                            href="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
+                            href="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>&page_id=2473"
                             data-fullsize="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
                             data-src="<?php echo esc_attr($gallery->previewpic_fullsized_url) ?>"
                             data-thumbnail="<?php echo esc_attr($gallery->previewurl) ?>"
