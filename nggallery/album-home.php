@@ -7,7 +7,7 @@
                 <div class="ngg-album-link">
                     <?php $this->start_element('nextgen_gallery.album_gallery', 'item', $gallery);?>
 
-                        <a class="Link gallery_link" test="<?php echo $gallery->pagelink; ?>" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
+                        <a class="Link gallery_link" test="<?php var_dump($gallery);?>" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
                             <img class="Thumb"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
