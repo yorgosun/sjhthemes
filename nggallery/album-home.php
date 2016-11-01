@@ -7,7 +7,7 @@
                 <div class="ngg-album-link">
                     <?php $this->start_element('nextgen_gallery.album_gallery', 'item', $gallery);?>
 
-                        <a class="Link gallery_link" test="<?php echo explode('?', $gallery->pagelink)[0]; ?>&page_id=2473" href="<?php echo nextgen_esc_url($gallery->pagelink); ?>">
+                        <a class="Link gallery_link" href="<?php echo explode('?', $gallery->pagelink)[0]; ?>?page_id=2473">
                             <img class="Thumb"
                                  alt="<?php echo esc_attr($gallery->title); ?>"
                                  src="<?php echo nextgen_esc_url($gallery->previewurl); ?>"/>
@@ -24,7 +24,7 @@
             <h4>
                 <a class="ngg-album-desc"
                    title="<?php echo esc_attr($gallery->title); ?>"
-                   href="<?php echo nextgen_esc_url($gallery->pagelink); ?>"
+                   href="<?php echo explode('?', $gallery->pagelink)[0]; ?>?page_id=2473"
                     <?php echo $max_width; ?>>
                     <?php echo_safe_html($gallery->title);?>
                 </a>
