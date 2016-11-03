@@ -1,6 +1,12 @@
 <?php $this->start_element('nextgen_gallery.gallery_container', 'container', $displayed_gallery);?>
 <div class="ngg-albumoverview">
-    <?php foreach ($galleries as $gallery) {
+    <?php
+$i = 0;
+foreach ($galleries as $gallery) {
+    if ($i > 3) {
+        break;
+    }
+
     ?>
         <div class="ngg-album-compact col-md-6">
             <div class="">
@@ -31,7 +37,11 @@
             </h4>
 
         </div>
-    <?php }?>
+    <?php
+$i++;
+}
+
+?>
     <br class="ngg-clear"/>
     <?php echo $pagination ?>
 </div>
