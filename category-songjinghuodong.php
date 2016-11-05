@@ -23,11 +23,7 @@ get_header();?>
                     <a><span>如何参加诵经活动</span></a>
                 </li>
                 <li class="tab-d" data-name="tab3">
-                    <a >
-                        <span>
-                            都有哪些仪规
-                        </span>
-                    </a>
+                    <a href="http://yorgo.91yousheng.com/?p=2666"><span>都有哪些仪规</span></a>
                 </li>
                 <li class="tab-d" data-name="tab4">
                     <a>
@@ -185,133 +181,47 @@ wp_reset_postdata();
             </div>
             <div style="display: none;" class="tab4 tab-item">
                 <ul class="book">
-                    <li>
-                        <div class="cover">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200" alt="楞严经">
-                            </a>
-                            <a href="#" class="downBtn">下载</a>
-                        </div>
-                        <div class="info">
-                            <h4>楞严经</h4>
-                            <p>
-                                <span class="title">全名:</span>
-                                <span>大佛顶如来密因修证了义诸菩萨万行首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">又名:</span>
-                                <span>大佛顶首楞严经、首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">简介:</span>
-                                <span style="display: inline-block;float: right;width: 660px;">
-                                    《楞严经》是佛教的一部极为重要的经典，可说是一部佛教修行大全，因为此经在内容上，包含了显密性相各方面的深刻道理；在宗派上则横跨禅净密律，均衡发挥，各得其所；在修行的次第上，则更是充实、圆满：举凡发心、解、行、证、悟，皆详尽剖析开示——从教令正发心起，经循循善诱的破惑、见真（明心见性）、依性起修（设坛结界、于实际上起正修行），并详细开示了一切凡圣境界（二十五圣圆通、三界七趣众生），令于圣境起企慕、而于凡外得知解，从而不受迷惑、不入歧途；又详述六十位修证（三渐次、干慧地、十信、十住、十行、十回向、四加行、十地、等觉、妙觉）令行者于菩提道上知所趣向；最后更广示五阴魔境，及其破除之法，俾于菩提道上，能克服魔怨留难，使所修圆满成就。
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cover">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200" alt="楞严经">
-                            </a>
-                            <a href="#" class="downBtn">下载</a>
-                        </div>
-                        <div class="info">
-                            <h4>楞严经</h4>
-                            <p>
-                                <span class="title">全名:</span>
-                                <span>大佛顶如来密因修证了义诸菩萨万行首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">又名:</span>
-                                <span>大佛顶首楞严经、首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">简介:</span>
-                                <span style="display: inline-block;float: right;width: 660px;">
-                                    《楞严经》是佛教的一部极为重要的经典，可说是一部佛教修行大全，因为此经在内容上，包含了显密性相各方面的深刻道理；在宗派上则横跨禅净密律，均衡发挥，各得其所；在修行的次第上，则更是充实、圆满：举凡发心、解、行、证、悟，皆详尽剖析开示——从教令正发心起，经循循善诱的破惑、见真（明心见性）、依性起修（设坛结界、于实际上起正修行），并详细开示了一切凡圣境界（二十五圣圆通、三界七趣众生），令于圣境起企慕、而于凡外得知解，从而不受迷惑、不入歧途；又详述六十位修证（三渐次、干慧地、十信、十住、十行、十回向、四加行、十地、等觉、妙觉）令行者于菩提道上知所趣向；最后更广示五阴魔境，及其破除之法，俾于菩提道上，能克服魔怨留难，使所修圆满成就。
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cover">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200" alt="楞严经">
-                            </a>
-                            <a href="#" class="downBtn">下载</a>
-                        </div>
-                        <div class="info">
-                            <h4>楞严经</h4>
-                            <p>
-                                <span class="title">全名:</span>
-                                <span>大佛顶如来密因修证了义诸菩萨万行首楞严经</span>
-                            </p>
-
-                            <p>
-                                <span class="title">又名:</span>
-                                <span>大佛顶首楞严经、首楞严经</span>
-                            </p>
-
-                            <p>
-                                <span class="title">简介:</span>
-                                <span style="display: inline-block;float: right;width: 660px;">
-                                    《楞严经》是佛教的一部极为重要的经典，可说是一部佛教修行大全，因为此经在内容上，包含了显密性相各方面的深刻道理；在宗派上则横跨禅净密律，均衡发挥，各得其所；在修行的次第上，则更是充实、圆满：举凡发心、解、行、证、悟，皆详尽剖析开示——从教令正发心起，经循循善诱的破惑、见真（明心见性）、依性起修（设坛结界、于实际上起正修行），并详细开示了一切凡圣境界（二十五圣圆通、三界七趣众生），令于圣境起企慕、而于凡外得知解，从而不受迷惑、不入歧途；又详述六十位修证（三渐次、干慧地、十信、十住、十行、十回向、四加行、十地、等觉、妙觉）令行者于菩提道上知所趣向；最后更广示五阴魔境，及其破除之法，俾于菩提道上，能克服魔怨留难，使所修圆满成就。
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cover">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200" alt="楞严经">
-                            </a>
-                            <a href="#" class="downBtn">下载</a>
-                        </div>
-                        <div class="info">
-                            <h4>楞严经</h4>
-                            <p>
-                                <span class="title">全名:</span>
-                                <span>大佛顶如来密因修证了义诸菩萨万行首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">又名:</span>
-                                <span>大佛顶首楞严经、首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">简介:</span>
-                                <span style="display: inline-block;float: right;width: 660px;">
-                                    《楞严经》是佛教的一部极为重要的经典，可说是一部佛教修行大全，因为此经在内容上，包含了显密性相各方面的深刻道理；在宗派上则横跨禅净密律，均衡发挥，各得其所；在修行的次第上，则更是充实、圆满：举凡发心、解、行、证、悟，皆详尽剖析开示——从教令正发心起，经循循善诱的破惑、见真（明心见性）、依性起修（设坛结界、于实际上起正修行），并详细开示了一切凡圣境界（二十五圣圆通、三界七趣众生），令于圣境起企慕、而于凡外得知解，从而不受迷惑、不入歧途；又详述六十位修证（三渐次、干慧地、十信、十住、十行、十回向、四加行、十地、等觉、妙觉）令行者于菩提道上知所趣向；最后更广示五阴魔境，及其破除之法，俾于菩提道上，能克服魔怨留难，使所修圆满成就。
-                                </span>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cover">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200" alt="楞严经">
-                            </a>
-                            <a href="#" class="downBtn">下载</a>
-                        </div>
-                        <div class="info">
-                            <h4>楞严经</h4>
-                            <p>
-                                <span class="title">全名:</span>
-                                <span>大佛顶如来密因修证了义诸菩萨万行首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">又名:</span>
-                                <span>大佛顶首楞严经、首楞严经</span>
-                            </p>
-                            <p>
-                                <span class="title">简介:</span>
-                                <span style="display: inline-block;float: right;width: 660px;">
-                                    《楞严经》是佛教的一部极为重要的经典，可说是一部佛教修行大全，因为此经在内容上，包含了显密性相各方面的深刻道理；在宗派上则横跨禅净密律，均衡发挥，各得其所；在修行的次第上，则更是充实、圆满：举凡发心、解、行、证、悟，皆详尽剖析开示——从教令正发心起，经循循善诱的破惑、见真（明心见性）、依性起修（设坛结界、于实际上起正修行），并详细开示了一切凡圣境界（二十五圣圆通、三界七趣众生），令于圣境起企慕、而于凡外得知解，从而不受迷惑、不入歧途；又详述六十位修证（三渐次、干慧地、十信、十住、十行、十回向、四加行、十地、等觉、妙觉）令行者于菩提道上知所趣向；最后更广示五阴魔境，及其破除之法，俾于菩提道上，能克服魔怨留难，使所修圆满成就。
-                                </span>
-                            </p>
-                        </div>
-                    </li>
+                   <?php
+            wp_reset_postdata();
+            $postargs = array(
+                'posts_per_page' => 10,
+                'category_name' => 'download_lection',
+                'orderby' => 'date',
+                'paged' => get_query_var('paged'),
+                'order' => 'DESC',
+            );
+            $query = new WP_Query($postargs);
+            $n = 0;
+            while ($query->have_posts()): $query->the_post();?>
+        <li>
+            <div class="cover">
+                <a href="<?php echo get_the_permalink(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+                </a>
+                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+            </div>
+            <div class="info">
+                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+                <p>
+                    <span class="title">全名:</span>
+                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+                </p>
+                <p>
+                    <span class="title">又名:</span>
+                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+                </p>
+                <p>
+                    <span class="title">摘要:</span>
+                    <span style="display: inline-block;float: right;width: 660px;">
+<?php echo get_the_excerpt() ?>
+</span>
+                </p>
+            </div>
+        </li>
+        <?php
+            endwhile;
+            wp_reset_postdata();
+        ?>
                 </ul>
             </div>
         </div>
