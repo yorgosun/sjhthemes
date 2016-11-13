@@ -13,26 +13,39 @@ body
     /*background-color: #333;*/
     background-color: transparent;
     border-color: transparent;
-    min-height: 80px;
+   height: auto !important;
+    margin:0!important;
 }
-
+.navbar-nav{
+    margin-top: 13px;
+}
+.nav-ul li a{
+    padding:5px;
+}
+.nav-ul li{
+    margin-right: 15px;
+}
+.nav-ul li:hover{
+    background: #ffffff;
+    color: #000;
+}
 .nav-gray-bg {
-    background-color: #9d583f;
+    background-color:#c66d43;
 }
 
 .navbar-brand {
-    height: 100px;
+    height: auto;
     padding: 0 15px;
 }
 
 .navbar-brand img {
-    margin-top: 10px;
-    width: 180px;
+    margin-top: 5px;
+    width: 120px;
 }
 
-.navbar-nav {
-    margin-top: 20px;
-}
+/*.navbar-nav {*/
+    /*margin-top: 20px;*/
+/*}*/
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
@@ -46,10 +59,11 @@ body
 
 /* header css end */
 
-.carousel-caption {
+.carousel-caption{
+    width: 80%;
     top: 200px;
+    left: 10% !important;
 }
-
 .carousel-caption p {
     text-align: left;
     font-size: 18px;
@@ -119,7 +133,7 @@ body
 }
 
 .content-gray {
-    background-color: #ffdebf;
+    background-color: #fdeee3;
 }
 
 .content-gray .button {
@@ -130,7 +144,7 @@ body
 
 .content-darkgray {
     color: #fff;
-    background-color: #bf7b49;
+    background-color: #c19678;
     padding: 50px 0 10px 0;
 }
 
@@ -168,4 +182,41 @@ body
     font-size: 16px;
     font-weight: 900;
     padding: 5px;
+}
+.carousel-indicators img{
+    width: 20px !important;
+    height: 20px !important;
+    border:1px solid #CCC;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+/*轮播文字*/
+.banner-title{
+    font-size: 60px;
+}
+.banner-text{
+    width:100%;
+    height: auto;
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    overflow: hidden;
+    text-align: center !important;
+}
+@media screen and (max-width: 900px) {
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner-text{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .banner-title{
+        font-size: 80px;
+    }
+    .banner-text{
+        font-size: 30px;
+    }
 }

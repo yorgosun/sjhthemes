@@ -9,30 +9,32 @@ get_header();?>
                 何为诵经
             </h1>
             <p class="intro">
-                这个活动的特点是“固定”，固定在周日上午九点，固定诵经一卷。慢慢形成人的一种习惯，一种潜意识。让受众脑子里有一个固定的认识，就是每周日上午九点，龙泉寺一定在诵一卷经。做网络直播同样是这种理念，无论在天涯海角，不管是风吹雨打，只要是周日上午九点，打开一个网页就可以和大家一起诵经。就像在西方人的文化中，周日上午固定是教堂礼拜时间一样，每周日上午九点，大家都可以回归佛教信仰生活，回归传统的修行方式。
+                诵经，代佛说法，众生欢喜，天神护佑。诵经，其音正直，其音和雅，其音清彻，其音深满，周遍远闻。无声化有声，口读耳听，口耳并用，深刻体会佛经的音韵美、节奏美、气势美和义理之美。认识佛陀深妙智慧，了解佛陀真实本义。诵经持咒乃修行之法，犹如扫尘除垢的工具。诵经持咒，可收拢散乱心识，开发心智，净烦恼、趣菩提。让我们一起共得佛陀摄受，认识佛陀深妙智慧，品味无上妙法甘露味，消除业障，破除迷暗，增长智慧，愉悦身心，洞彻宇宙人生的真相，诸恶莫作，众善奉行，自净其意，最终了脱生死，成就佛道。诵经是因，成佛是果！
             </p>
         </div>
     </div>
     <section>
-<div class="container">
-    <ul class="tab">
-        <li class="current tab-d" data-name="tab1">
-            <a><span>全部诵经活动</span></a>
-        </li>
-        <li class="tab-d" data-name="tab2">
-            <a><span>如何参加诵经活动</span></a>
-        </li>
-        <li class="tab-d" data-name="tab3">
-            <a href="http://yorgo.91yousheng.com/?p=2666"><span>都有哪些仪规</span></a>
-        </li>
-        <li class="tab-d" data-name="tab4">
-            <a><span>下载所诵经文</span></a>
-        </li>
-    </ul>
-<div class="tab1 tab-item">
-    <div class="currentActivity">
-        <ul class="activities">
-<?php
+        <div class="container">
+            <ul class="tab">
+                <li class="current tab-d" data-name="tab1">
+                    <a><span>全部诵经活动</span></a>
+                </li>
+                <li class="tab-d" data-name="tab2">
+                    <a><span>如何参加诵经活动</span></a>
+                </li>
+                <li class="tab-d" data-name="tab3">
+                    <a href="http://yorgo.91yousheng.com/?p=2666"><span>都有哪些仪规</span></a>
+                </li>
+                <li class="tab-d" data-name="tab4">
+                    <a>
+                        <span>下载所诵经文</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab1 tab-item">
+                <div class="currentActivity">
+                    <ul class="activities">
+            <?php
 $postargs = array(
 'posts_per_page' => 2,
 'category_name' => 'songjinghuodong',
@@ -136,13 +138,50 @@ wp_reset_postdata();
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="canjia">
-        <h3>寺内路线图</h3>
-        <div>
-            <div>
-                <img src="" alt="">
+            <div style="display: none;" class="tab4 tab-item">
+                <ul class="book">
+                   <?php
+            wp_reset_postdata();
+            $postargs = array(
+                'posts_per_page' => 10,
+                'category_name' => 'download_lection',
+                'orderby' => 'date',
+                'paged' => get_query_var('paged'),
+                'order' => 'DESC',
+            );
+            $query = new WP_Query($postargs);
+            $n = 0;
+            while ($query->have_posts()): $query->the_post();?>
+        <li>
+            <div class="cover">
+                <a href="<?php echo get_the_permalink(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+                </a>
+                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+            </div>
+            <div class="info">
+                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+                <p>
+                    <span class="title">全名:</span>
+                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+                </p>
+                <p>
+                    <span class="title">又名:</span>
+                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+                </p>
+                <p>
+                    <span class="title">摘要:</span>
+                    <span style="display: inline-block;float: right;width: 660px;">
+<?php echo get_the_excerpt() ?>
+</span>
+                </p>
+            </div>
+        </li>
+        <?php
+            endwhile;
+            wp_reset_postdata();
+        ?>
+                </ul>
             </div>
         </div>
     </div>

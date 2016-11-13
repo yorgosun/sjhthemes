@@ -53,9 +53,10 @@ while ($query1->have_posts()): $query1->the_post();
     ?>item" data-slide-number="<?php echo $n ?>">
 									<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
 									<div class="carousel-caption">
-										<h1><?php echo get_the_title() ?></h1>
-										<hr>
-										<p><?php echo get_the_excerpt() ?></p>
+
+										<h1 class="banner-title"><?php echo get_the_title() ?></h1>
+										<hr style="width: 60%">
+										<p class="banner-text"><?php echo get_the_excerpt() ?></p>
 									</div>
 								</div>
 							<?php
@@ -80,7 +81,6 @@ while ($query1->have_posts()): $query1->the_post();
 	<div class="col-md-3">
 		<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
 		<p class="text-center peitu-title">- <?php echo get_the_title() ?> -</p>
-		<!--<p class="peitu-desc"><?php /*echo get_the_excerpt() */?></p>-->
 	</div>
 </a>
 
@@ -105,12 +105,11 @@ wp_reset_postdata();
 			</p>
 			<a href="/?cat=54" class="button">进一步了解 ></a>
 		</div>
-		<?php
-			endwhile;
-			wp_reset_postdata();
-		?>
-
 <div class="col-md-7">
+	<?php
+		endwhile;
+		wp_reset_postdata();
+	?>
 <?php
 $postargs = array(
     'posts_per_page' => 2,
@@ -120,10 +119,11 @@ $postargs = array(
 );
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
+///head c
 ?>
 <a href="<?php echo get_the_permalink(); ?>">
 <div class="col-md-6">
-	<img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+	<img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
 	<h3><?php echo get_the_title() ?></h3>
 	<p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
 	<p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
@@ -181,6 +181,7 @@ wp_reset_postdata();
 		<a href="?cat=50" class="button">进一步了解 ></a>
 	</div>
 	<div class="col-md-7">
+
 <?php
 $postargs = array(
 'posts_per_page' => 4,
@@ -227,6 +228,7 @@ wp_reset_postdata();
 			</div>
 <div class="col-md-7">
 		<div class="booklist">
+
 <?php
 $postargs = array(
 'posts_per_page' => 8,
