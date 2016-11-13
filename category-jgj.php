@@ -51,7 +51,7 @@ get_header();?>
 wp_reset_postdata();
 $postargs = array(
     'posts_per_page' => 10,
-    'category_name' => 'dfdslyj',
+    'category_name' => 'jgj',
     'orderby' => 'date',
     'paged' => get_query_var('paged'),
     'order' => 'DESC',
