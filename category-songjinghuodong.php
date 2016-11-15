@@ -1,15 +1,19 @@
 <?php
 
 get_header();?>
-
+<style>
+    .songjing .nav h1.title{
+        font-size: 60px;
+    }
+</style>
 <div class="songjing">
     <div class="nav">
         <div class="container">
             <h1 class="title">
                 何为诵经
             </h1>
-            <p class="intro">
-                诵经，代佛说法，众生欢喜，天神护佑。诵经，其音正直，其音和雅，其音清彻，其音深满，周遍远闻。无声化有声，口读耳听，口耳并用，深刻体会佛经的音韵美、节奏美、气势美和义理之美。认识佛陀深妙智慧，了解佛陀真实本义。诵经持咒乃修行之法，犹如扫尘除垢的工具。诵经持咒，可收拢散乱心识，开发心智，净烦恼、趣菩提。让我们一起共得佛陀摄受，认识佛陀深妙智慧，品味无上妙法甘露味，消除业障，破除迷暗，增长智慧，愉悦身心，洞彻宇宙人生的真相，诸恶莫作，众善奉行，自净其意，最终了脱生死，成就佛道。诵经是因，成佛是果！
+            <p class="intro text-center">
+                代佛说法，众生欢喜，天神护佑。诵经是因，成佛是果！
             </p>
         </div>
     </div>
@@ -23,7 +27,7 @@ get_header();?>
                     <a><span>如何参加诵经活动</span></a>
                 </li>
                 <li class="tab-d" data-name="tab3">
-                    <a href="http://yorgo.91yousheng.com/?p=2666"><span>都有哪些仪规</span></a>
+                    <a><span>都有哪些仪规</span></a>
                 </li>
                 <li class="tab-d" data-name="tab4">
                     <a>
@@ -187,32 +191,58 @@ wp_reset_postdata();
     </div>
 </div>
 <div  style="display: none;" class="tab3 tab-item">
-    <div style="width: 1000px;margin: 0 auto;">
-        <video width="100%"  controls="controls" src="http://ina.tju.edu.cn/images/ina2.mp4"></video>
+<!--    <div style="width: 1000px;margin: 0 auto;">-->
+<!--        <video width="100%"  controls="controls" src="http://ina.tju.edu.cn/images/ina2.mp4"></video>-->
+<!--    </div>-->
+<!--    <div class="yigui">-->
+<!--        <div class="left">-->
+<!--            <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/yigui1.jpg" alt="">-->
+<!--        </div>-->
+<!--        <div class="right">-->
+<!--            <h4>香赞</h4>-->
+<!--            <p>-->
+<!--                dddddddddddddddddddddddddddd-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="yigui">-->
+<!--        <div class="left">-->
+<!--            <h4>香赞</h4>-->
+<!--            <p>-->
+<!--                dddddddddddddddddddddddddddd-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        <div class="right">-->
+<!--            <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/yigui1.jpg" alt="">-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>楞严经诵经仪轨</h1>
+            <p>作者： / 时间：2016-11-07</p>
+            <div class="content-text">
+                <p style="text-align: left;"><strong>炉香赞</strong></p>
+                <p style="text-align: left;"><strong>炉香乍爇 法界蒙熏 诸佛海会悉遥闻</strong></p>
+                <p style="text-align: left;"><strong>随处结祥云 诚意方殷 诸佛现全身</strong></p>
+                <p style="text-align: left;"><strong>南无香云盖菩萨摩诃萨(三称) </strong></p>
+                <p style="text-align: left;"><strong>南无本师释迦摩尼佛（三称）</strong></p>
+                <p style="text-align: left;"><strong>无上甚深微妙法 百千万劫难遭遇</strong></p>
+                <p style="text-align: left;"><strong>我今见闻得受持 愿解如来真实义</strong></p>
+                <p style="text-align: left;"><strong>南无楞严会上佛菩萨（三称）</strong></p>
+                <p><strong>观想文</strong></p>
+                <p><strong>请观想：佛陀金色身八尺放金光，吾等心口有心炉点心香，心香飘渺，香云朵朵供在佛前。香云上有青黄赤白四色莲花，放青黄赤白四色光芒。莲花四边簇有梅花、兰花、桂花、牡丹、芍药，种种高贵典雅之花。上有烛台，一对对一排排，光明照耀。空中悬挂庄严之宫灯，亦是一对对一排排，光明照耀。上方天雨曼陀罗花，大地四方皆现真金之色，平坦广阔，金光闪耀。观想吾等头上有顶光，身披袈裟，圆顶方袍。前有师长、祖父母及古今高僧大德，带领吾等诵经；右边是父亲，左边是母亲，满面慈祥，白发苍苍，与吾等一同诵经；身后是六道一切有情众生，随从吾等诵经。吾等安坐此清净庄严之境，心生欢喜、庆幸、感恩，至诚皈依。对面上方虚空之中，本师释迦世尊及楞严会上诸佛菩萨，以大慈悲眼注视吾等，与面前之大佛顶首楞严经，同放甘露光明，从吾等顶门而入，涤除吾等无始以来所积一切罪垢。</strong></p>
+                <p><strong>（正诵）</strong></p>
+                <p><b>南无楞严会上佛菩萨（三称）</b></p>
+                <p><strong>忏悔发愿（读）</strong></p>
+                <p><strong>至心忏悔（某甲）与一切众生。从无始以来。迷失真心。流转生死。六</strong><strong>根罪障无量无边。圆妙无上佛乘。无以开解。一切所愿。不得现前。我</strong><strong>今持诵大佛顶首楞严经。以此善根。发露黑恶。过去现在未来。三业所</strong><strong>造。无边重罪。皆得消灭。身心清净。惑障蠲除。福智庄严。净因增长。</strong><strong>自他行愿。速得圆成。愿诸如来。常在说法。所有功德。起随喜心。回</strong><strong>向菩提。证常乐果。</strong></p>
+                <p><strong>（现场回向）</strong></p>
+                <p><strong>诵经功德殊胜行  无边胜福皆回向  普愿沉溺诸众生</strong></p>
+                <p><strong>速往无量光佛刹  十方三世一切佛  一切菩萨摩诃萨</strong></p>
+                <p><strong>摩诃般若波罗蜜</strong></p>
+            </div>
+
+        </div>
     </div>
-    <div class="yigui">
-        <div class="left">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/yigui1.jpg" alt="">
-        </div>
-        <div class="right">
-            <h4>香赞</h4>
-            <p>
-                dddddddddddddddddddddddddddd
-            </p>
-        </div>
-    </div>
-    <div class="yigui">
-        <div class="left">
-            <h4>香赞</h4>
-            <p>
-                dddddddddddddddddddddddddddd
-            </p>
-        </div>
-        <div class="right">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/yigui1.jpg" alt="">
-        </div>
-    </div>
-</div>
 <div style="display: none;" class="tab4 tab-item">
     <ul class="book">
         <?php

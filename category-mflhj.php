@@ -8,12 +8,16 @@
  */
 
 get_header();?>
-
+<style>
+    .songjing .nav h1.title{
+        font-size: 60px;
+    }
+</style>
 <div class="songjing ebook">
     <div class="nav">
         <div class="container">
             <h1 class="title">
-                诵经所需的电子书
+                现场录音,电子经文
             </h1>
             <p class="intro" style="text-align: center;">
                 "周日诵经会项目"在2015年初开始做的时候,是作为信息中心的内部学修

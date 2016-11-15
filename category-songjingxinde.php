@@ -8,7 +8,11 @@
  */
 
 get_header();?>
-
+<style>
+    .songjing .nav h1.title{
+        font-size: 55px;
+}
+</style>
 <div class="songjing songjingxinde">
     <div class="nav">
         <div class="container">
@@ -16,7 +20,7 @@ get_header();?>
                 诵经心得分享,感悟佛法
             </h1>
             <p class="intro" style="text-align: center;">
-                "周日诵经会项目"在2015年初开始做的时候,是作为信息中心的内部学修
+                炉香苒苒，梵音朗朗，罄声阵阵，大义洋洋。诵经，不只在深山古刹，也可在红尘凡间
             </p>
         </div>
     </div>

@@ -3,6 +3,11 @@
 Template Name: 活动相册模版
  */
 get_header();?>
+<style>
+    .songjing .nav h1.title{
+        font-size: 55px;
+    }
+</style>
 <div class="songjing huodongxiangce">
     <div class="nav">
         <div class="container">
@@ -10,7 +15,7 @@ get_header();?>
                 感受活动现场
             </h1>
             <p class="intro" style="text-align: center;">
-                "周日诵经会项目"在2015年初开始做的时候,是作为信息中心的内部学修。
+                三宝地，僧俗众。法师领众在前，共启无上法门。君今有缘至此，云何竟又空回？
             </p>
         </div>
     </div>
