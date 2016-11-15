@@ -20,16 +20,16 @@ get_header();?>
     <section>
         <div class="container">
             <ul class="tab">
-                <li class="current tab-d" data-name="tab1">
+                <li class="current tab-d" data-name="tab1" style="cursor:pointer;">
                     <a><span>全部诵经活动</span></a>
                 </li>
-                <li class="tab-d" data-name="tab2">
+                <li class="tab-d" data-name="tab2" style="cursor:pointer;">
                     <a><span>如何参加诵经活动</span></a>
                 </li>
-                <li class="tab-d" data-name="tab3">
+                <li class="tab-d" data-name="tab3" style="cursor:pointer;">
                     <a><span>都有哪些仪规</span></a>
                 </li>
-                <li class="tab-d" data-name="tab4">
+                <li class="tab-d" data-name="tab4" style="cursor:pointer">
                     <a>
                         <span>下载所诵经文</span>
                     </a>
@@ -133,9 +133,6 @@ wp_reset_postdata();
                     </p>
                     <p>
                         起点站首末车时间：6：00-22：30，终点站首末车时间：5：20-21：30
-                    </p>
-                    <p>
-                        全程票价(元)：2.50【刷卡:刷卡封顶成人4角/学生2角】
                     </p>
                     <p>
                         线路长度(公里)：26.074

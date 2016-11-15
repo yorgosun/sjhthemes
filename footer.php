@@ -9,7 +9,7 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-		<div class="container-fluid content-block content-darkgray footer">
+		<div class="container-fluid content-block content-darkgray footer foot-pisition">
 			<div class="container">
 				<?php
 if (is_home()) {
