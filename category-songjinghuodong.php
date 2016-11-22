@@ -50,16 +50,16 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																									  <li class="item">
-																									         <a href="<?php echo get_the_permalink(); ?>">
-																									            <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-																									          </a>
-																									            <h4><?php echo get_the_title() ?></h4>
-																									            <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
-																									            <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
-																									            <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
-																									   </li>
-																									  <?php
+																										  <li class="item">
+																										         <a href="<?php echo get_the_permalink(); ?>">
+																										            <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+																										          </a>
+																										            <h4><?php echo get_the_title() ?></h4>
+																										            <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
+																										            <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
+																										            <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
+																										   </li>
+																										  <?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -154,32 +154,32 @@ $postargs = array(
 $query = new WP_Query($postargs);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-																									        <li>
-																									            <div class="cover">
-																									                <a href="<?php echo get_the_permalink(); ?>">
-																									                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
-																									                </a>
-																									                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
-																									            </div>
-																									            <div class="info">
-																									                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
-																									                <p>
-																									                    <span class="title">全名:</span>
-																									                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
-																									                </p>
-																									                <p>
-																									                    <span class="title">又名:</span>
-																									                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
-																									                </p>
-																									                <p>
-																									                    <span class="title">摘要:</span>
-																									                    <span style="display: inline-block;float: right;width: 660px;">
-																									<?php echo get_the_excerpt() ?>
-																									</span>
-																									                </p>
-																									            </div>
-																									        </li>
-																									        <?php
+																										        <li>
+																										            <div class="cover">
+																										                <a href="<?php echo get_the_permalink(); ?>">
+																										                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+																										                </a>
+																										                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+																										            </div>
+																										            <div class="info">
+																										                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+																										                <p>
+																										                    <span class="title">全名:</span>
+																										                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+																										                </p>
+																										                <p>
+																										                    <span class="title">又名:</span>
+																										                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+																										                </p>
+																										                <p>
+																										                    <span class="title">摘要:</span>
+																										                    <span style="display: inline-block;float: right;width: 660px;">
+																										<?php echo get_the_excerpt() ?>
+																										</span>
+																										                </p>
+																										            </div>
+																										        </li>
+																										        <?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -255,32 +255,32 @@ $postargs = array(
 $query = new WP_Query($postargs);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-									        <li>
-									            <div class="cover">
-									                <a href="<?php echo get_the_permalink(); ?>">
-									                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
-									                </a>
-									                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
-									            </div>
-									            <div class="info">
-									                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
-									                <p>
-									                    <span class="title">全名:</span>
-									                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
-									                </p>
-									                <p>
-									                    <span class="title">又名:</span>
-									                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
-									                </p>
-									                <p>
-									                    <span class="title">摘要:</span>
-									                    <span style="display: inline-block;float: right;width: 660px;">
-									<?php echo get_the_excerpt() ?>
-									</span>
-									                </p>
-									            </div>
-									        </li>
-									        <?php
+										        <li>
+										            <div class="cover">
+										                <a href="<?php echo get_the_permalink(); ?>">
+										                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+										                </a>
+										                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+										            </div>
+										            <div class="info">
+										                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+										                <p>
+										                    <span class="title">全名:</span>
+										                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+										                </p>
+										                <p>
+										                    <span class="title">又名:</span>
+										                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+										                </p>
+										                <p>
+										                    <span class="title">摘要:</span>
+										                    <span style="display: inline-block;float: right;width: 660px;">
+										<?php echo get_the_excerpt() ?>
+										</span>
+										                </p>
+										            </div>
+										        </li>
+										        <?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -299,7 +299,7 @@ wp_reset_postdata();
         var marker = new BMap.Marker(point);
         map.addOverlay(marker);
         marker.setAnimation(BMAP_ANIMATION_BOUNCE);
-        map.panBy($('.canjia').width()/2,$('#map').height()/2);
+        map.panBy($('.container').width()/2,$('#map').height()/2);
     });
 
     </script>
