@@ -220,3 +220,8 @@ body
         font-size: 30px;
     }
 }
+.container p
+{
+    font-size: 15px;
+    line-height: 24px;
+}
