@@ -12,7 +12,7 @@ get_header();?>
     <div class="nav">
         <div class="container">
             <h1 class="title">
-                何为诵经
+                如何诵经
             </h1>
             <p class="intro text-center">
                 代佛说法，众生欢喜，天神护佑。诵经是因，成佛是果！
@@ -50,16 +50,16 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																											  <li class="item">
-																											         <a href="<?php echo get_the_permalink(); ?>">
-																											            <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-																											          </a>
-																											            <h4><?php echo get_the_title() ?></h4>
-																											            <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
-																											            <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
-																											            <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
-																											   </li>
-																											  <?php
+																													  <li class="item">
+																													         <a href="<?php echo get_the_permalink(); ?>">
+																													            <img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+																													          </a>
+																													            <h4><?php echo get_the_title() ?></h4>
+																													            <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
+																													            <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
+																													            <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
+																													   </li>
+																													  <?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -70,7 +70,7 @@ wp_reset_postdata();
 <div style="display: none;" class="tab2 tab-item">
     <div class="canjia">
         <h3>如何参加活动</h3>
-        <p>下载YY直播软件,然后搜索房间号:5822447,进入房间参与活动</p>
+        <p>下载YY直播软件,然后搜索房间号:58220447,进入房间参与活动</p>
         <ul>
             <li>
                 <div class="">
@@ -154,32 +154,32 @@ $postargs = array(
 $query = new WP_Query($postargs);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-																											        <li>
-																											            <div class="cover">
-																											                <a href="<?php echo get_the_permalink(); ?>">
-																											                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
-																											                </a>
-																											                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
-																											            </div>
-																											            <div class="info">
-																											                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
-																											                <p>
-																											                    <span class="title">全名:</span>
-																											                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
-																											                </p>
-																											                <p>
-																											                    <span class="title">又名:</span>
-																											                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
-																											                </p>
-																											                <p>
-																											                    <span class="title">摘要:</span>
-																											                    <span style="display: inline-block;float: right;width: 660px;">
-																											<?php echo get_the_excerpt() ?>
-																											</span>
-																											                </p>
-																											            </div>
-																											        </li>
-																											        <?php
+																													        <li>
+																													            <div class="cover">
+																													                <a href="<?php echo get_the_permalink(); ?>">
+																													                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+																													                </a>
+																													                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+																													            </div>
+																													            <div class="info">
+																													                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+																													                <p>
+																													                    <span class="title">全名:</span>
+																													                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+																													                </p>
+																													                <p>
+																													                    <span class="title">又名:</span>
+																													                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+																													                </p>
+																													                <p>
+																													                    <span class="title">摘要:</span>
+																													                    <span style="display: inline-block;float: right;width: 660px;">
+																													<?php echo get_the_excerpt() ?>
+																													</span>
+																													                </p>
+																													            </div>
+																													        </li>
+																													        <?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -255,32 +255,32 @@ $postargs = array(
 $query = new WP_Query($postargs);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-											        <li>
-											            <div class="cover">
-											                <a href="<?php echo get_the_permalink(); ?>">
-											                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
-											                </a>
-											                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
-											            </div>
-											            <div class="info">
-											                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
-											                <p>
-											                    <span class="title">全名:</span>
-											                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
-											                </p>
-											                <p>
-											                    <span class="title">又名:</span>
-											                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
-											                </p>
-											                <p>
-											                    <span class="title">摘要:</span>
-											                    <span style="display: inline-block;float: right;width: 660px;">
-											<?php echo get_the_excerpt() ?>
-											</span>
-											                </p>
-											            </div>
-											        </li>
-											        <?php
+													        <li>
+													            <div class="cover">
+													                <a href="<?php echo get_the_permalink(); ?>">
+													                    <img src="<?php echo get_template_directory_uri(); ?>/img/book_cover.jpg" width="140" height="200">
+													                </a>
+													                <a href="<?php echo get_post_meta(get_the_id(), '下载', true) ?>" class="downBtn">下载</a>
+													            </div>
+													            <div class="info">
+													                <a href="<?php echo get_the_permalink(); ?>"><h4><?php echo get_the_title(); ?></h4></a>
+													                <p>
+													                    <span class="title">全名:</span>
+													                    <span><?php echo get_post_meta(get_the_id(), '全名', true) ?></span>
+													                </p>
+													                <p>
+													                    <span class="title">又名:</span>
+													                    <span><?php echo get_post_meta(get_the_id(), '又名', true) ?></span>
+													                </p>
+													                <p>
+													                    <span class="title">摘要:</span>
+													                    <span style="display: inline-block;float: right;width: 660px;">
+													<?php echo get_the_excerpt() ?>
+													</span>
+													                </p>
+													            </div>
+													        </li>
+													        <?php
 endwhile;
 wp_reset_postdata();
 ?>
