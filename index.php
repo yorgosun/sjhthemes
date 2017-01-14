@@ -17,27 +17,27 @@ get_header();
 ?>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
-<?php
-$postargs = array(
-    'posts_per_page' => 5,
-    'category_name' => '首页轮播图',
-    'orderby' => 'date',
-    'order' => 'DESC',
-);
-$query1 = new WP_Query($postargs);
-$n = 0;
-while ($query1->have_posts()): $query1->the_post();
-    ?>
-										<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
-										<?php if ($n == 0) {
-        echo " class=\"active\"";
-    }
-    ?>>
-										<?php
-    $n++;
-endwhile;
-wp_reset_postdata();
-?>
+	<?php
+		$postargs = array(
+			'posts_per_page' => 5,
+			'category_name' => '首页轮播图',
+			'orderby' => 'date',
+			'order' => 'DESC',
+		);
+		$query1 = new WP_Query($postargs);
+		$n = 0;
+		while ($query1->have_posts()): $query1->the_post();
+	?>
+	<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
+	<?php if ($n == 0) {
+		echo " class=\"active\"";
+	}
+	?>>
+	<?php
+		$n++;
+		endwhile;
+		wp_reset_postdata();
+	?>
 	</ol>
 	<!-- main slider carousel items -->
 	<div class="carousel-inner">

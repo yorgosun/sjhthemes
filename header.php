@@ -46,6 +46,7 @@ if (is_category() || is_page()) {
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right nav-ul">
 						<li <?php if (is_home()) {?> class="active"<?php }?>><a href="/">首页</a></li>
+						<li><a href="/chatroom/live">诵经直播</a></li>
 						<li class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/?cat=54">诵经活动</a></li>
 						<li class="<?php echo is_category('dianzijingwen') ? 'active' : ''; ?>"><a href="/?cat=53">电子经文</a></li>
 						<li class="<?php echo is_category('songjingxinde') ? 'active' : ''; ?>"><a href="/?cat=50">诵经心得</a></li>
@@ -54,5 +55,3 @@ if (is_category() || is_page()) {
 				</div>
 			</div>
 		</nav>
-
-
