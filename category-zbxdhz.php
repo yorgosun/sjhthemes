@@ -46,19 +46,19 @@ while ($query->have_posts()): $query->the_post();
 //图片的尺寸要在common.css里调整，下面img暂时先写样式
 
     ?>
-						<li class="item">
-						<a href="<?php echo get_the_permalink(); ?>">
-						<img  style="height:200px" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-						<h5><?php echo get_the_title(); ?></h5></a>
-						<p>时间：<?php echo get_post_meta(get_the_id(), '时间', true) ?></p>
-				        <p>地点：<?php echo get_post_meta(get_the_id(), '地点', true) ?></p>
-				         <p>
-				         <a style="width:100%" href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>"><button  type="button">周报</button></a>
-				        <a style="width:100%" href="<?php echo get_post_meta(get_the_id(), '心得', true) ?>"><button  type="button">心得</button></a>
-				        <a style="width:100%" href="<?php echo get_post_meta(get_the_id(), '照片', true) ?>"><button  type="button">照片</button></a>
-				        </p>
-						</li>
-				<?php
+							<li class="item">
+							<a href="<?php echo get_the_permalink(); ?>">
+							<img  style="height:200px" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+							<h5><?php echo get_the_title(); ?></h5></a>
+							<p>时间：<?php echo get_post_meta(get_the_id(), '时间', true) ?></p>
+					        <p>地点：<?php echo get_post_meta(get_the_id(), '地点', true) ?></p>
+					         <p>
+					         <a style="width:32%" href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>"><button style="width:100%"  type="button">周报</button></a>
+					        <a style="width:32%" href="<?php echo get_post_meta(get_the_id(), '心得', true) ?>"><button  style="width:100%" type="button">心得</button></a>
+					        <a style="width:32%" href="<?php echo get_post_meta(get_the_id(), '照片', true) ?>"><button  style="width:100%" type="button">照片</button></a>
+					        </p>
+							</li>
+					<?php
 endwhile;
 wp_reset_postdata();
 ?>
