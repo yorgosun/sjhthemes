@@ -46,42 +46,29 @@ while ($query->have_posts()): $query->the_post();
 //图片的尺寸要在common.css里调整，下面img暂时先写样式
 
     ?>
-		<li class="item">
-		<a href="<?php echo get_the_permalink(); ?>">
-		<img  style="height:200px" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-		<h5><?php echo get_the_title(); ?></h5></a>
-		<p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
-		</li>
-
-
-		            <div class="col-md-6">
-		                <img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-		                <h3><?php echo get_the_title() ?></h3>
-		                <p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
-		                <p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
-		                <p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
-		                <p><a href="http://forum.longquanzs.org/forum.php?mod=viewthread&tid=80449&fromuid=211674"><button style="width: 100%;" type="button">报名</button></a></p>
-		            </div>
-
-
-
-
-
-							<?php
+			<li class="item">
+			<a href="<?php echo get_the_permalink(); ?>">
+			<img  style="height:200px" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+			<h5><?php echo get_the_title(); ?></h5></a>
+			<p>时间：<?php echo get_post_meta(get_the_id(), '时间', true) ?></p>
+	        <p>地点：<?php echo get_post_meta(get_the_id(), '地点', true) ?></p>
+	         <p>
+	        <a href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>"><button style="width: 32%;" type="button">周报</button></a>
+	        <a href="<?php echo get_post_meta(get_the_id(), '心得', true) ?>"><button style="width: 32%;" type="button">心得</button></a>
+	        <a href="<?php echo get_post_meta(get_the_id(), '照片', true) ?>"><button style="width: 32%;" type="button">照片</button></a>
+	        </p>
+			</li>
+	<?php
 endwhile;
 wp_reset_postdata();
 ?>
-
-                    </ul>
-                </div>
+ </ul>
+ </div>
 <?php
 wp_pagenavi();
 ?>
-
-            </div>
-
-
-        </div>
+ </div>
+</div>
 
 
 
