@@ -38,12 +38,12 @@ $query1 = new WP_Query($postargs);
 $n = 0;
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																				<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
-																				<?php if ($n == 0) {
+																					<img src="<?php echo get_the_post_thumbnail_url(null, array(160, 100)) ?>" data-target="#myCarousel" data-slide-to="<?php echo $n ?>"
+																					<?php if ($n == 0) {
         echo " class=\"active\"";
     }
     ?>>
-																				<?php
+																					<?php
     $n++;
 endwhile;
 wp_reset_postdata();
@@ -57,19 +57,19 @@ $n = 0;
 
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																														<div class="<?php if ($n == 0) {
+																															<div class="<?php if ($n == 0) {
         echo "active ";
     }
     ?>item" data-slide-number="<?php echo $n ?>">
-																															<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
-																															<div class="carousel-caption">
+																																<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
+																																<div class="carousel-caption">
 
-																																<h1 class="banner-title"><?php echo get_the_title() ?></h1>
-																																<hr style="width: 60%">
-																																<p class="banner-text"><?php echo get_the_excerpt() ?></p>
+																																	<h1 class="banner-title"><?php echo get_the_title() ?></h1>
+																																	<hr style="width: 60%">
+																																	<p class="banner-text"><?php echo get_the_excerpt() ?></p>
+																																</div>
 																															</div>
-																														</div>
-																													<?php
+																														<?php
     $n++;
 endwhile;
 wp_reset_postdata();
@@ -87,14 +87,14 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																						<a href="<?php echo get_the_permalink(); ?>">
-																							<div class="col-md-3">
-																								<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
-																								<p class="text-center peitu-title">- <?php echo get_the_title() ?> -</p>
-																							</div>
-																						</a>
+																							<a href="<?php echo get_the_permalink(); ?>">
+																								<div class="col-md-3">
+																									<img src="<?php echo get_the_post_thumbnail_url() ?>" class="img-responsive">
+																									<p class="text-center peitu-title">- <?php echo get_the_title() ?> -</p>
+																								</div>
+																							</a>
 
-																						<?php
+																							<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -108,15 +108,15 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																								<div class="col-md-5">
-																									<h2><?php echo get_the_title() ?></h2>
-																									<p class="desctext">
-																										<?php echo the_content() ?>
-																									</p>
-																									<a href="/?cat=54" class="button">进一步了解 ></a>
-																								</div>
-																						<div class="col-md-7">
-																							<?php
+																									<div class="col-md-5">
+																										<h2><?php echo get_the_title() ?></h2>
+																										<p class="desctext">
+																											<?php echo the_content() ?>
+																										</p>
+																										<a href="/?cat=54" class="button">进一步了解 ></a>
+																									</div>
+																							<div class="col-md-7">
+																								<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -134,15 +134,15 @@ while ($query1->have_posts()): $query1->the_post();
 ///head c"<?php echo get_the_permalink();
 
     ?>
-											<div class="col-md-6">
-												<img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-												<h3><?php echo get_the_title() ?></h3>
-												<p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
-												<p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
-												<p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
-												<p><a href="http://forum.longquanzs.org/forum.php?mod=viewthread&tid=80449&fromuid=211674"><button style="width: 100%;" type="button">报名</button></a></p>
-											</div>
-												<?php
+												<div class="col-md-6">
+													<img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+													<h3><?php echo get_the_title() ?></h3>
+													<p>时间：<?php echo get_post_meta(get_the_id(), 'activitytime', true) ?></p>
+													<p>地点：<?php echo get_post_meta(get_the_id(), 'activitylocation', true) ?></p>
+													<p>YY直播：<?php echo get_post_meta(get_the_id(), 'yychannel', true) ?></p>
+													<p><a href="http://forum.longquanzs.org/forum.php?mod=viewthread&tid=80449&fromuid=211674"><button style="width: 100%;" type="button">报名</button></a></p>
+												</div>
+													<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -159,20 +159,21 @@ $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
 ///head c"<?php echo get_the_permalink();
     ?>
-					<div class="col-md-6">
-						<a href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>">
-						<img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
-						</a>
-						<h3><?php echo get_the_title() ?></h3>
-						<p>时间：<?php echo get_post_meta(get_the_id(), '时间', true) ?></p>
-						<p>地点：<?php echo get_post_meta(get_the_id(), '地点', true) ?></p>
-						<p>
-						<a href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>"><button style="width: 32%;" type="button">周报</button></a>
-						<a href="<?php echo get_post_meta(get_the_id(), '心得', true) ?>"><button style="width: 32%;" type="button">心得</button></a>
-						<a href="<?php echo get_post_meta(get_the_id(), '照片', true) ?>"><button style="width: 32%;" type="button">照片</button></a>
-						</p>
-					</div>
-						<?php
+						<div class="col-md-6">
+							<a href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>">
+							<img style="width: 100%" src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>">
+							</a>
+							<h3><?php echo get_the_title() ?></h3>
+							<p>时间：<?php echo get_post_meta(get_the_id(), '时间', true) ?></p>
+							<p>地点：<?php echo get_post_meta(get_the_id(), '地点', true) ?></p>
+							<p></p>
+							<p>
+							<a href="<?php echo get_post_meta(get_the_id(), '周报', true) ?>"><button style="width: 32%;" type="button">周报</button></a>
+							<a href="<?php echo get_post_meta(get_the_id(), '心得', true) ?>"><button style="width: 32%;" type="button">心得</button></a>
+							<a href="<?php echo get_post_meta(get_the_id(), '照片', true) ?>"><button style="width: 32%;" type="button">照片</button></a>
+							</p>
+						</div>
+							<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -192,11 +193,11 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																								<h2><?php echo get_the_title() ?></h2>
-																								<p class="desctext">
-																									<?php echo the_content() ?>
-																								</p>
-																								<?php
+																									<h2><?php echo get_the_title() ?></h2>
+																									<p class="desctext">
+																										<?php echo the_content() ?>
+																									</p>
+																									<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -216,11 +217,11 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																									<h2><?php echo get_the_title() ?></h2>
-																									<p class="desctext">
-																										<?php echo the_content() ?>
-																									</p>
-																								<?php
+																										<h2><?php echo get_the_title() ?></h2>
+																										<p class="desctext">
+																											<?php echo the_content() ?>
+																										</p>
+																									<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -241,12 +242,12 @@ $n = 0;
 while ($query2->have_posts()): $query2->the_post();
 
     ?>
-																						<div class="col-md-6">
-																							<a href="<?php echo get_the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>" width="300" height="183"></a>
-																							<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
-																							<p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
-																						</div>
-																						<?php
+																							<div class="col-md-6">
+																								<a href="<?php echo get_the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url(null, array(300, 183)) ?>" width="300" height="183"></a>
+																								<h3><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+																								<p><?php echo get_post_meta(get_the_id(), 'author', true) ?> <?php the_time('Y-m-d')?></p>
+																							</div>
+																							<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -262,11 +263,11 @@ $postargs = array(
 $query1 = new WP_Query($postargs);
 while ($query1->have_posts()): $query1->the_post();
     ?>
-																												<h2><?php echo get_the_title() ?></h2>
-																												<p class="desctext">
-																													<?php echo the_content() ?>
-																												</p>
-																										<?php
+																													<h2><?php echo get_the_title() ?></h2>
+																													<p class="desctext">
+																														<?php echo the_content() ?>
+																													</p>
+																											<?php
 endwhile;
 wp_reset_postdata();
 ?>
@@ -287,10 +288,10 @@ $n = 0;
 while ($query3->have_posts()): $query3->the_post();
 
     ?>
-																							<a href="<?php echo get_the_permalink(); ?>">
-																								<div class="booktitle"><?php echo get_the_title(); ?></div>
-																								<img src="/wp-content/themes/twentysixteen/img/book.jpg"></a>
-																						<?php
+																								<a href="<?php echo get_the_permalink(); ?>">
+																									<div class="booktitle"><?php echo get_the_title(); ?></div>
+																									<img src="/wp-content/themes/twentysixteen/img/book.jpg"></a>
+																							<?php
 endwhile;
 wp_reset_postdata();
 ?>
