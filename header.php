@@ -23,7 +23,7 @@ if (is_home() || is_category() || is_page() || is_tag()) {
 if (is_single()) {
     wp_enqueue_style('detailcss', get_template_directory_uri() . '/css/detail.css', array(), '20160809');
 }
-if (is_category() || is_page()) {
+if (is_category() || is_page() || is_tag()) {
     wp_enqueue_style('commoncss', get_template_directory_uri() . '/css/common.css', array(), '20160809');
 }
 

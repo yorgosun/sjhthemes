@@ -85,12 +85,12 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-	<div class="box" cid="1">
-	<div class="title"><?php echo get_the_title(); ?></div>
-	<p><?php echo the_content() ?></p>
-	<div class="expand">»</div>
-	</div>
-	<?php
+		<div class="box" cid="<?php echo get_the_id(); ?>">
+		<div class="title"><?php echo get_the_title(); ?></div>
+		<p><?php echo the_content() ?></p>
+		<div class="expand">»</div>
+		</div>
+		<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
