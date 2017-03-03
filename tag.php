@@ -28,7 +28,7 @@ get_header();?>
 .box .title {
     background-color: #f1f1f1;
     height: 45px;
-    line-height: 41px;
+    line-height: 35px;
     padding: 5px;
     font-size: 18px;
 }
@@ -89,12 +89,12 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-					<div class="box" cid="<?php echo get_the_id(); ?>">
-					<div class="title"><?php echo get_the_title(); ?></div>
-					<p><?php echo the_content() ?></p>
-					<div class="expand">»</div>
-					</div>
-					<?php
+							<div class="box" cid="<?php echo get_the_id(); ?>">
+							<div class="title"><?php echo get_the_title(); ?></div>
+							<p><?php echo the_content() ?></p>
+							<div class="expand">»</div>
+							</div>
+							<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
@@ -132,11 +132,11 @@ $(document).ready(function() {
             });
         }
 
-        $("box:first").animate({
+        $(".box:first").animate({
                 height: "100%"
             });
-         $("box:first").find('.expand').css('transform', 'rotate(-90deg)');
-         $("box:first").attr('open', true);
+         $(".box:first").find('.expand').css('transform', 'rotate(-90deg)');
+         $(".box:first").attr('open', true);
     });
 });
 </script>
