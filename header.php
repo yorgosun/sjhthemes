@@ -17,7 +17,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head();?>
 	<?php
-if (is_home() || is_category() || is_page()) {
+if (is_home() || is_category() || is_page() || is_tag()) {
     wp_enqueue_style('indexcss', get_template_directory_uri() . '/css/index.css', array(), '20160809');
 }
 if (is_single()) {
