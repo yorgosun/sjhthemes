@@ -64,7 +64,7 @@ get_header();?>
     transition: all 0.5s ease;
 }
 </style>
-<div class="songjing">
+<div class="songjing songjingxinde">
 	<div class="nav">
 		<div class="container">
 			<h1 class="title">
@@ -89,12 +89,12 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-										<div class="box" cid="<?php echo get_the_id(); ?>">
-										<div class="title"><?php echo get_the_title(); ?></div>
-										<p><?php echo the_content() ?></p>
-										<div class="expand">»</div>
-										</div>
-										<?php
+											<div class="box" cid="<?php echo get_the_id(); ?>">
+											<div class="title"><?php echo get_the_title(); ?></div>
+											<p><?php echo the_content() ?></p>
+											<div class="expand">»</div>
+											</div>
+											<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
