@@ -76,6 +76,12 @@ get_header();?>
 	<div class="container">
 
 <?php
+function htmtocode($content)
+{
+    $content = str_replace(" ", " ", $content);
+    $content = str_replace("n", "<br>", $content);
+    return $content;
+}
 wp_reset_postdata();
 
 $tag = get_query_var('tag');
@@ -89,12 +95,12 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-												<div class="box" cid="<?php echo get_the_id(); ?>">
-												<div class="title"><?php echo get_the_title(); ?></div>
-												<p><?php echo str_replace(the_content(), array("\r\n", "\n", "\r"), '<br/>') ?></p>
-												<div class="expand">»</div>
-												</div>
-												<?php
+			<div class="box" cid="<?php echo get_the_id(); ?>">
+			<div class="title"><?php echo get_the_title(); ?></div>
+			<p><?php echo htmtocode(the_content()); ?></p>
+			<div class="expand">»</div>
+			</div>
+			<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
