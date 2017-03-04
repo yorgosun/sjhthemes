@@ -35,7 +35,7 @@ get_header();?>
 
 .box p {
     word-break: break-all;
-    padding: 5px;
+    padding: 15px;
     text-indent: 2em;
     font-size: 16px;
     line-height: 30px;
@@ -101,12 +101,12 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-						<div class="box" cid="<?php echo get_the_id(); ?>">
-						<div class="title"><?php echo get_the_title(); ?></div>
-						<p><?php echo htmtocode(the_content()); ?></p>
-						<div class="expand">»</div>
-						</div>
-						<?php
+							<div class="box" cid="<?php echo get_the_id(); ?>">
+							<div class="title"><?php echo get_the_title(); ?></div>
+							<p><?php echo htmtocode(the_content()); ?></p>
+							<div class="expand">»</div>
+							</div>
+							<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
