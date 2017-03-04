@@ -17,7 +17,7 @@ if (is_home()) {
 }
 ?>
 				<div class="col-md-12">
-					<p class="copyright">Copyright 2016 @龙泉寺信息中心</p>
+					<p class="copyright">Copyright 2016 @龙泉寺弘宣部</p>
 				</div>
 			</div>
 		</div>
