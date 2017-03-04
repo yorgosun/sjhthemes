@@ -228,3 +228,17 @@ body
 
 .live {position: absolute;width: 100%;height: 100px;z-index: 9999;top: 70px;text-align: center; } 
 .live img { width: 300px; height: 100px; }
+
+.newbutton
+{
+    border-radius: 20px;
+    background-color: #cd704c;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100%;
+}
+.newbutton:hover
+{
+     background-color: #d78d70;
+}
