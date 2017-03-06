@@ -47,7 +47,7 @@ if (is_category() || is_page() || is_tag()) {
 					<ul class="nav navbar-nav navbar-right nav-ul">
 						<li <?php if (is_home()) {?> class="active"<?php }?>><a href="/">首页</a></li>
 						<li><a href="/chatroom/live">诵经直播</a></li>
-						<li style="display:none;" class="<?php echo is_category('zbxdhz') ? 'active' : ''; ?>"><a href="/?cat=208">诵经回顾</a></li>
+						<li  class="<?php echo is_category('zbxdhz') ? 'active' : ''; ?>"><a href="/?cat=208">诵经回顾</a></li>
 
 
 						<li style="display:none;" class="<?php echo is_category('songjinghuodong') ? 'active' : ''; ?>"><a href="/?cat=54">诵经活动</a></li>
