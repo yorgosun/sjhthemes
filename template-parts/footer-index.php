@@ -11,7 +11,7 @@
 
 <div class="col-md-2">
 	<p>电子经文</p>
-	<li><a href="/?cat=219">《法华经》</a></li>
+	<li><a href="/?cat=219">《大方广佛华严经》</a></li>
 	<li><a href="/?cat=80">《法华经》</a></li>
 	<li><a href="/?cat=83">《金刚经》</a></li>
 	<li><a href="/?cat=81">《楞严经》</a></li>
