@@ -45,7 +45,18 @@ get_header();?>
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 }
-
+.box span
+{
+    width: 100%;
+    background: #f9f9f9;
+    font-size: 20px;
+    text-align: right;
+    position: absolute;
+    line-height: 35px;
+    height: 30px;
+    bottom: 0px;
+    padding-right: 10px;
+}
 .box .expand {
     color: #bbbbbb;
     width: 45px;
@@ -101,12 +112,13 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-							<div class="box" cid="<?php echo get_the_id(); ?>">
-							<div class="title"><?php echo get_the_title(); ?></div>
-							<p><?php echo htmtocode(the_content()); ?></p>
-							<div class="expand">»</div>
-							</div>
-							<?php
+		<div class="box" cid="<?php echo get_the_id(); ?>">
+		<div class="title"><?php echo get_the_title(); ?></div>
+		<p><?php echo htmtocode(the_content()); ?></p>
+	    <span>作者：<?php echo get_post_meta(get_the_id(), 'author', true) ?></span>
+		<div class="expand">»</div>
+		</div>
+		<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
