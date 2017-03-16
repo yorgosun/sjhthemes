@@ -21,8 +21,22 @@ get_header();?>
     </div>
     <section>
         <div class="container">
+        <h1 id="title" style="text-align: center;margin-bottom: 30px;"></h1>
+
         <?php echo do_shortcode('[album id=1 template=xc]'); ?>
         </div>
     </section>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+         $('#title').text(getQueryString('title'));
+        function getQueryString(name) {
+             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+});
+</script>
 <?php get_footer();?>
