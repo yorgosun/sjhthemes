@@ -111,13 +111,13 @@ $args = array(
 $query = new WP_Query($args);
 $n = 0;
 while ($query->have_posts()): $query->the_post();?>
-						<div class="box" cid="<?php echo get_the_id(); ?>">
-						<div class="title"><?php echo get_the_title(); ?></div>
-						<p><?php echo htmtocode(the_content()); ?></p>
-					    <span>作者：<?php echo get_post_meta(get_the_id(), 'author', true) ?></span>
-						<div class="expand">»</div>
-						</div>
-						<?php
+							<div class="box" cid="<?php echo get_the_id(); ?>">
+							<div class="title"><?php echo get_the_title(); ?></div>
+							<p><?php echo htmtocode(the_content()); ?></p>
+						    <span>作者：<?php echo get_post_meta(get_the_id(), 'author', true) ?></span>
+							<div class="expand">»</div>
+							</div>
+							<?php
 endwhile;
 wp_reset_postdata();
 wp_pagenavi();
@@ -167,7 +167,7 @@ $(document).ready(function() {
         function getQueryString(name) {
              var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
             var r = window.location.search.substr(1).match(reg);
-            if (r != null) return unescape(r[2]); return null;
+            if (r != null) return decodeURI(r[2]); return null;
         }
 
 });
