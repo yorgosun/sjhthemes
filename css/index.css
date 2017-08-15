@@ -248,7 +248,7 @@ body
    display:-ms-flexbox;
    display:flex;
 }
-.newtop img:nth-child(1):hover
+.newtop img:hover
 {
-    url(/wp-content/themes/twentysixteen/img/t1c.png)
+    background:url(/wp-content/themes/twentysixteen/img/t1c.png);
 }
