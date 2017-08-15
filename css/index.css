@@ -242,3 +242,13 @@ body
 {
      background-color: #d78d70;
 }
+.newtop
+{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+}
+.newtop img:nth-child(1):hover
+{
+    url(/wp-content/themes/twentysixteen/img/t1c.png)
+}
