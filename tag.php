@@ -76,6 +76,13 @@ get_header();?>
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
 </style>
 
 <div class="songjing songjingxinde">
