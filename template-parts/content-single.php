@@ -9,7 +9,7 @@
 
 ?>
 <style media="all">
-    img .aligncenter {
+    .aligncenter {
         clear: both;
         display: block;
         margin: 0 auto 0 auto;
