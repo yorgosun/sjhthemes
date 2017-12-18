@@ -17,7 +17,8 @@ if (is_home()) {
 }
 ?>
 				<div class="col-md-12">
-					<p class="copyright">Copyright 2016 @龙泉寺弘宣部</p>
+                    <a href="https://www.qingcloud.com"><p><img src="qingyun.png" height="60">本网站云服务由青云提供赞助</p></a>
+					<p class="copyright">Copyright 2016 @龙泉寺弘宣部 京ICP备09021374号 京公网安备 110108007888 号</p>
 				</div>
 			</div>
 		</div>

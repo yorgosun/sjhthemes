@@ -18,7 +18,7 @@ get_header();
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 <?php
-file_get_contents("http://2254.liveplay.myqcloud.com/live/2254_6e3f00bc39fa11e791eae435c87f075e.m3u8");
+file_get_contents("http://60.205.168.125/hls/live.m3u8");
 ?>
 <div class="live" style="display:<?php echo (strpos($http_response_header[0], '404 Not Found') === false) ? 'block' : 'none'; ?>">
 <a href="http://sutrachanting.longquanzs.org/chatroom/live">
